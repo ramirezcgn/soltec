@@ -3,7 +3,6 @@
   display: flex;
   position: relative;
   flex-wrap: nowrap;
-  z-index: 1;
   background: var(--color-white);
   color: var(--color-black);
   max-width: var(--container-max-width);
