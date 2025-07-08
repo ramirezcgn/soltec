@@ -1,0 +1,45 @@
+
+.hero__button {
+  display: inline-block;
+  font-family: "proxima-nova";
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 25px;
+  margin-top: 12px;
+  padding: 5px;
+  padding-left: 21px;
+  padding-right: 21px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 17px;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-wine);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 13px;
+    background-image: url("../images/icons/arrow-right.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 576px) {
+.hero__button {   
+  font-size: 17px;
+  margin-left: 13px;
+  margin-top: 32px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-bottom: 9px;
+  padding-top: 4px;
+  }
+}   
