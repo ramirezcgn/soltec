@@ -1,11 +1,8 @@
-.hero__button {
+.button {
   display: inline-block;
   font-family: "proxima-nova";
   font-weight: 700;
   font-size: 15px;
-  margin-left: 14px;
-  margin-top: 10px;
-  padding: 7px 21px 5px 22px;
   background-color: var(--color-red);
   color: var(--color-white);
   text-decoration: none;
@@ -26,24 +23,5 @@
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle;
-  }
-
-  @media (min-width: 576px) {
-    font-size: 17px;
-    margin-left: 13px;
-    margin-top: 25px;
-    padding: 11px 24px 9px 24px;
-    border-radius: 25px;
-  }
-
-  @media (min-width: 992px) {
-    margin-left: 22px;
-    margin-top: 48px;
-    padding-left: 23px;
-  }
-
-  @media (min-width: 1200px) {
-    margin-left: 29px;
-    margin-top: 23px;
   }
 }

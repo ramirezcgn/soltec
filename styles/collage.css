@@ -1,9 +1,7 @@
-.hero__images {
-  .hero__img__rectangular {
+.collage__images {
+   .img__rectangular {
     width: 193px;
     height: 289px;
-    margin-top: 40px;
-    margin-left: 14px;
     border-radius: 4px;
 
     @media (min-width: 576px) {
@@ -28,11 +26,9 @@
     }
   }
 
-  .hero__img__square {
+  .img__square {
     width: 145px;
     height: 135px;
-    margin-top: -106px;
-    margin-left: 182px;
     border-radius: 4px;
 
     @media (min-width: 576px) {
