@@ -8,6 +8,13 @@
   text-decoration: none;
   border-radius: 17px;
   transition: background 0.3s ease;
+  padding: 7px 21px 5px 22px;
+  border-radius: 25px;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+    padding: 11px 24px 9px 24px;
+        }
 
   &:hover {
     background-color: var(--color-wine);

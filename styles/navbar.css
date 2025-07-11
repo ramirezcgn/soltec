@@ -20,7 +20,7 @@
       width: 20px;
       height: 20px;
 
-      @media (min-width: 992px) {
+      @media (min-width: 1024px) {
         width: 24px;
         height: 24px;
       }
@@ -28,7 +28,7 @@
   }
 
   .icon-search {
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       display: none;
     }
   }
@@ -40,7 +40,7 @@
   display: flex;
   padding: 20px 14px;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     border-right: 2px solid #EAEDF1;
     padding: 28px 32px;
   }
@@ -50,7 +50,7 @@
   width: 160px;
   height: 32px;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     width: 168px;
   }
 }
@@ -68,7 +68,7 @@
   display: none;
   position: absolute;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     position: relative;
     display: flex;
     width: 100%;
@@ -95,14 +95,14 @@
     column-gap: 20px;
     font-size: 20px;
 
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       flex-direction: row;
     }
   }
 }
 
 .menu_toggle:checked ~ .navbar__menu {
-  @media (max-width: 991px) {
+  @media (max-width: 1024px) {
     display: flex;
     background-color: white;
     position: absolute;
@@ -123,7 +123,7 @@
   gap: 30px;
   flex-wrap: nowrap;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     gap: 15px;
     padding: 0 24px 0 16px;
     border-left: 2px solid #EAEDF1;
@@ -133,7 +133,7 @@
 .navbar__language {
   position: relative;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     order: 1;
   }
 }
@@ -141,7 +141,7 @@
 .navbar__hamburger {
   display: block;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 }
@@ -172,7 +172,7 @@
   background-color: white;
   border-radius: 7px;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     top: 56px;
     right: -25px;
     transform: none;
@@ -210,7 +210,7 @@
   .right__search-input {
     display: none;
 
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       display: block;
       padding: 10px 40px 10px 15px;
       font-size: 16px;
@@ -225,7 +225,7 @@
   .right__search-button {
     display: none;
 
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       display: block;
       position: absolute;
       top: 50%;
@@ -280,14 +280,14 @@
   display: none;
   position: absolute;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1024px) {
     position: static;
     display: block;
   }
 }
 
 .search__toggle:checked ~ .search__dropdown {
-  @media (max-width: 991px) {
+  @media (max-width: 1024px) {
     display: block;
     right: -35px;
     top: 46px;

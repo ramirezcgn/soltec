@@ -10,13 +10,13 @@
   z-index: -1;
 }
 .background__image {
-  @media (min-width: 1200px) {
+  @media (min-width: 1288px) {
     display: none;
   }
 }
 .background__video {
   display: none;
-  @media (min-width: 1200px) {
+  @media (min-width: 1288px) {
     display: block;
   }
 }

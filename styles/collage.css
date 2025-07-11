@@ -1,58 +1,23 @@
-.collage__images {
-   .img__rectangular {
-    width: 193px;
-    height: 289px;
-    border-radius: 4px;
+.collage {
+  display: flex;
+  align-self: flex-start;
 
-    @media (min-width: 576px) {
-      width: 219px;
-      height: 327px;
-      margin-top: 93px;
-      margin-left: 50px;
-    }
-
-    @media (min-width: 992px) {
-      width: 290px;
-      height: 432px;
-      margin-top: 76px;
-      margin-left: 12px;
-    }
-
-    @media (min-width: 1200px) {
-      width: 374px;
-      height: 556px;
-      margin-top: 60px;
-      margin-left: 12px;
-    }
+  .collage__img {
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .collage__img__rectangular {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    align-self: center;
+    width: 62%;
+    aspect-ratio: 0.67;
   }
 
-  .img__square {
-    width: 145px;
-    height: 135px;
-    border-radius: 4px;
-
-    @media (min-width: 576px) {
-      width: 163px;
-      height: 154px;
-      margin-top: -119px;
-      margin-left: 241px;
-      margin-right: 13px;
-    }
-
-    @media (min-width: 992px) {
-      width: 215px;
-      height: 205px;
-      margin-top: -156px;
-      margin-left: 265px;
-      margin-right: 13px;
-    }
-
-    @media (min-width: 1200px) {
-      width: 277px;
-      height: 261px;
-      margin-top: -202px;
-      margin-left: 336px;
-      margin-right: 13px;
-    }
+  .collage__img__square {
+    margin-left: -47px;
+    aspect-ratio: 1.06;
+    align-self: end;
+    width: 46%;
   }
 }
