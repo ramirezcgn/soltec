@@ -1,3 +1,9 @@
+.header {
+  padding: 16px;
+   @media (min-width: 1332px) {
+    padding: 24px 0;
+  }
+}
 
 .navbar {
   display: flex;
@@ -6,11 +12,10 @@
   background: var(--color-white);
   color: var(--color-black);
   max-width: var(--container-max-width);
-  margin: 16px;
   border-radius: 7px;
 
   @media (min-width: 1332px) {
-    margin: 24px auto;
+    margin: 0 auto;
   }
 
   .icon {

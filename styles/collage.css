@@ -7,17 +7,38 @@
     flex-shrink: 0;
   }
   .collage__img__rectangular {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     align-self: center;
     width: 62%;
     aspect-ratio: 0.67;
+    @media (min-width: 768px) {
+      margin-top: 93px;
+      margin-bottom: 34px;
+    }
+    @media (min-width: 1024px) {
+      margin-top: 77px;
+      margin-bottom: 45px;
+    }
+    @media (min-width: 1288px) {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
   }
 
   .collage__img__square {
-    margin-left: -47px;
+    margin-left: -25px;
     aspect-ratio: 1.06;
     align-self: end;
     width: 46%;
+    @media (min-width: 768px) {
+      margin-left: -28px;
+    }
+    @media (min-width: 1024px) {
+      margin-left: -37px;
+    }
+    @media (min-width: 1288px) {
+      margin-left: -48px;
+    }
   }
 }
