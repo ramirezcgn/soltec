@@ -1,0 +1,107 @@
+/* ===== BACKGROUND ===== */
+.hero {
+  position: relative;
+
+  .hero__background__image,
+  .hero__background__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .hero__background__image {
+    @media (min-width: 1288px) {
+      display: none;
+    }
+  }
+  .hero__background__video {
+    display: none;
+    @media (min-width: 1288px) {
+      display: block;
+    }
+  }
+  .hero__container {
+    position: relative;
+    margin: 0 auto;
+
+    .hero__top {
+      margin-bottom: 27px;
+      .hero__content {
+        .hero__title {
+          color: var(--color-white);
+          margin-top: 62px;
+          margin-bottom: 18px;
+
+          @media (min-width: 768px) {
+            margin-top: 93px;
+            margin-bottom: 17px;
+          }
+
+          @media (min-width: 1024px) {
+            margin-top: 78px;
+          }
+
+          @media (min-width: 1288px) {
+            margin-top: 183px;
+          }
+        }
+
+        .hero__paragraph {
+          color: var(--color-white);
+          margin: 0;
+          margin-bottom: 24px;
+
+          @media (min-width: 768px) {
+            margin-bottom: 39px;
+          }
+
+          @media (min-width: 1024px) {
+            margin-bottom: 65px;
+          }
+
+          @media (min-width: 1288px) {
+            margin-bottom: 42px;
+          }
+        }
+      }
+    }
+
+    .hero__down {
+      padding: 12px;
+      .hero__col {
+        border: 1px solid var(--color-red);
+        padding-left: 25px;
+        padding-right: 23px;
+        .hero__title__secondary {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: var(--color-white);
+          margin-top: 34px;
+          margin-bottom: 18px;
+          @media (min-width: 768px) {
+            font-size: 31px;
+          }
+        }
+        .hero__paragraph__secondary {
+          display:-webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          color: var(--color-white);
+          margin-bottom: 32px;
+          font-size: 18px;
+            @media (min-width: 768px) {
+            margin-bottom: 21px;
+          }
+        }
+        .hero__button__secondary {
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}
