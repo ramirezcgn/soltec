@@ -8,13 +8,14 @@
   color: var(--color-white);
   text-decoration: none;
   transition: background 0.3s ease;
-  padding: 2px 21px 2px 22px;
-  border-radius: 25px;
+  padding: 2px 22px 2px 22px;
   gap: 12px;
-
+  border-radius: 25px;
   @media (min-width: 768px) {
+    padding: 2px 24px 2px 24px;
+    gap: 12px;  
     font-size: 17px;
-    padding: 6px 24px 6px 24px;
+    line-height: 40px;
   }
 
   &:hover {

@@ -1,0 +1,7 @@
+.card {
+    margin-top: 34px;
+    padding-left: 12px;
+      @media (min-width: 768px) {
+        margin-top: -7px;
+  }
+}
