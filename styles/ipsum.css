@@ -1,0 +1,10 @@
+.ipsum {
+    .ipsum__container {
+    position: relative;
+    margin: 0 auto;
+  }
+    .ipsum__header {
+        display: flex;
+        justify-content: space-between;
+  }
+} 
