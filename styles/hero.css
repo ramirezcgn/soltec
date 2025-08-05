@@ -1,6 +1,9 @@
-/* ===== BACKGROUND ===== */
 .hero {
   position: relative;
+  padding-bottom: 80px;
+  @media (min-width: 768px) {
+    padding-bottom: 0;
+  }
 
   .hero__background__image,
   .hero__background__video {
@@ -28,13 +31,12 @@
     margin: 0 auto;
 
     .hero__top {
-      margin-bottom: 27px;
+      margin-bottom: 40px;
       .hero__content {
         .hero__title {
           color: var(--color-white);
           margin-top: 62px;
           margin-bottom: 18px;
-
           @media (min-width: 768px) {
             margin-top: 93px;
             margin-bottom: 17px;
@@ -53,55 +55,36 @@
           color: var(--color-white);
           margin: 0;
           margin-bottom: 24px;
-
           @media (min-width: 768px) {
-            margin-bottom: 39px;
-          }
-
-          @media (min-width: 1024px) {
-            margin-bottom: 65px;
+            margin-bottom: 40px;
+            padding-right: 5px;
+            font-size: 17px;
+            line-height: 1.4;
           }
 
           @media (min-width: 1288px) {
-            margin-bottom: 42px;
+            margin-bottom: 41px;
           }
         }
       }
     }
 
     .hero__down {
-      padding: 12px;
-      .hero__col {
-        border: 1px solid var(--color-red);
-        padding-left: 25px;
-        padding-right: 23px;
-        .hero__title__secondary {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          color: var(--color-white);
-          margin-top: 34px;
-          margin-bottom: 18px;
-          @media (min-width: 768px) {
-            font-size: 31px;
-          }
-        }
-        .hero__paragraph__secondary {
-          display:-webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          color: var(--color-white);
-          margin-bottom: 32px;
-          font-size: 18px;
-            @media (min-width: 768px) {
-            margin-bottom: 21px;
-          }
-        }
-        .hero__button__secondary {
-          margin-bottom: 32px;
-        }
+      border: 1px solid var(--color-red);
+      margin: 0;
+    }
+    .hero__card__col:nth-child(2) {
+      border-top: 1px solid var(--color-red);
+      border-bottom: 1px solid var(--color-red);
+      @media (min-width: 768px) {
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid var(--color-red);
+        border-right: 1px solid var(--color-red);
       }
+    }
+    .hero__card__col {
+      padding: 0;
     }
   }
 }
