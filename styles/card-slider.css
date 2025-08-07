@@ -1,0 +1,13 @@
+.card-slider {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-right: -24px;
+  @media (min-width: 1024px) {
+    margin-right: -32px;
+  }
+  @media (min-width: 1288px) {
+    margin-right: 0;
+  }
+} 

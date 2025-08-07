@@ -20,6 +20,12 @@ html {
   --color-black: black;
   --color-red: #d2232a;
   --color-wine: #8B1A1A;
+  --color-Navy-Blue: #110056;
+  --color-Midnight-Blue: #00004f;
+  --color-gray: #cfd6de;
+  --color-Lavender-Gray: #eff1f6;
+  --color-Slate-Gray: #696e7c;
+  --color-Dark-Indigo: #292f49;
 }
 
 /* ===== RESET ===== */
