@@ -1,4 +1,15 @@
 .section {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 137px;
+  @media (min-width: 768px) {
+    padding-bottom: 145px;
+  }
+
+  @media (min-width: 768px) {
+    padding-bottom: 144px;
+  }
+
+  &.section--charcoal-blue {
+    background-color: var(--color-Charcoal-Blue);
+  }
 }
