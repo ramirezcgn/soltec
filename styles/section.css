@@ -11,5 +11,6 @@
 
   &.section--charcoal-blue {
     background-color: var(--color-Charcoal-Blue);
+    padding-bottom: 88px;
   }
 }
