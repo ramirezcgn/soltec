@@ -5,7 +5,15 @@
   margin-top: 32px;
   @media (min-width: 768px) {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: 4px;
     grid-template-columns: 1fr 1fr 1fr;
-    
+  }
+
+  @media (min-width: 1288px) {
+    margin: 0;
   }
 }

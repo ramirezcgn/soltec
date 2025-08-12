@@ -1,16 +1,31 @@
 .section {
   padding-top: 60px;
-  padding-bottom: 137px;
+  padding-bottom: 138px;
   @media (min-width: 768px) {
-    padding-bottom: 145px;
+    padding-bottom: 146px;
   }
 
-  @media (min-width: 768px) {
-    padding-bottom: 144px;
+  @media (min-width: 1024px) {
+    padding-bottom: 124px;
+  }
+
+  @media (min-width: 1288px) {
+    padding-bottom: 146px;
   }
 
   &.section--charcoal-blue {
     background-color: var(--color-Charcoal-Blue);
     padding-bottom: 88px;
+        
+    @media (min-width: 768px) {
+      padding-top: 55px;
+    }
+    @media (min-width: 1024px) {
+      padding-top: 58px;
+    }
+
+    @media (min-width: 1288px) {
+      padding-top: 59px;
+    }
   }
 }
