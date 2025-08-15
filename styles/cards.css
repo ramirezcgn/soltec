@@ -109,15 +109,7 @@
   }
   .card__img__wrapper {
     margin-bottom: 0px;
-    .card--tertiary & { 
-      @media (min-width: 768px) {
-        margin-bottom: 53px;
-      }
-
-      @media (min-width: 768px) {
-        margin-bottom: 55px;
-      }
-
+    .card--tertiary & {
        @media (min-width: 1024px) {
         margin-bottom: 62px;
       }
@@ -149,7 +141,7 @@
   }
 
   .card__content {
-    padding: 25px;
+    padding: 26px;
     background-color: var(--color-Lavender-Gray);
     border: 1px solid var(--color-light-gray);
     border-top: none;
@@ -165,6 +157,7 @@
         display: block;
         border: none;
         padding: 0;
+        margin-top: 56px;
       }
     }
   }

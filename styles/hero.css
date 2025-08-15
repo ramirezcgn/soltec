@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding-bottom: 82px;
+  padding-bottom: 81px;
   @media (min-width: 768px) {
     padding-bottom: 0px;
   }

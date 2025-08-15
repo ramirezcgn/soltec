@@ -9,10 +9,10 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
-  font-size :34px;
+  font-weight: 700;
+  font-size :35px;
   @media (min-width: 768px) {
-    font-size: 44px;
+    font-size: 43px;
   }
 }
 

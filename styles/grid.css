@@ -11,12 +11,9 @@
   }
 }
 
-.container__section {
-  position: relative;
-  margin: 0 auto;
-}
-
-.container__section--charcoal-blue {
+.container__section,
+.container__section--charcoal-blue,
+.container__section--white {
   position: relative;
   margin: 0 auto;
 }
