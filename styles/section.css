@@ -1,0 +1,41 @@
+:root {
+  --section-spacing-top: 90px; 
+  --section-spacing-bottom: 137px; 
+
+  @media (min-width: 768px) {
+    --section-spacing-top: 80px; 
+    --section-spacing-bottom: 144px; 
+  }
+
+  @media (min-width: 1024px) {
+    --section-spacing-top: 60px;
+    --section-spacing-bottom: 121px;
+  }
+
+  @media (min-width: 1228px) {
+    --section-spacing-top: 60px;
+    --section-spacing-bottom: 144px;
+  }
+}
+
+.section {
+  padding-top: var(--section-spacing-top);
+  padding-bottom: var(--section-spacing-bottom);
+
+  &.section--charcoal-blue {
+    background-color: var(--color-Charcoal-Blue);
+    padding-top: calc(var(--section-spacing-top) * 0.8);
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.64);
+      @media (min-width: 768px) {
+        padding-bottom: calc(var(--section-spacing-bottom) * 0.62);
+      }
+
+      @media (min-width: 1024px) {
+        padding-bottom: calc(var(--section-spacing-bottom) * 0.76);
+      }
+
+      @media (min-width: 1288px) {
+        padding-bottom: calc(var(--section-spacing-bottom) * 0.605);
+      }
+  }
+}

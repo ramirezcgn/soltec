@@ -1,0 +1,112 @@
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: -3px;
+  margin-bottom: 8px;
+  color: var(--color-Midnight-Blue);
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: end;
+    margin-top: 8px;
+    margin-bottom: 51px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1024px) {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: 1288px) {
+    margin-bottom: 33px;
+  }
+
+  &.headline--secondary {
+    color: var(--color-white);
+     margin: 0;
+    @media (min-width: 768px) {
+      flex-direction: column;
+      margin-top: 24px;
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      text-align: left;
+      margin-top: 40px;
+      margin-bottom: 31px;
+      gap: 150px;
+    }
+  }
+
+  &.headline--tertiary {
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 32px;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 28px;
+    }
+  }
+}
+.headline__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-start;
+  flex: 1;
+  margin-top: 16px;
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+
+  .headline--tertiary & {
+    margin: 0;
+    @media (min-width: 1024px) {
+    max-width: 650px;
+  }
+    @media (min-width: 1288px) {
+    max-width: 811px;
+  }
+  }
+}
+.headline__title {
+  margin: 0;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: auto;
+    margin: 0;
+  }
+
+  .headline--secondary & {
+    margin-bottom: 15px;
+    @media (min-width: 768px) {
+      margin-bottom: 27px;
+    }
+  }
+
+  .headline--tertiary & {
+    margin-bottom: 32px;
+  }
+}
+
+.headline__description {
+  font-size: 16px;
+  margin-bottom: 16px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  .headline--tertiary & {
+    margin: 0;
+    margin-bottom: 16px;
+    @media (min-width: 768px) {
+      line-height: 1.33;
+      margin-bottom: 15px;
+    }
+  }
+}

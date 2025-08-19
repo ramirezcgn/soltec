@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="styles/grid.css" />
     <link rel="stylesheet" href="styles/typography.css" />
     <link rel="stylesheet" href="styles/cards.css" />
+    <link rel="stylesheet" href="styles/card-slider.css" />
+    <link rel="stylesheet" href="styles/card-collection.css" />
+    <link rel="stylesheet" href="styles/card-deck.css" />
     <link rel="stylesheet" href="styles/buttons.css" />
     <link rel="stylesheet" href="styles/collage.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/hero.css" />
-    <link rel="stylesheet" href="styles/ipsum.css">
+    <link rel="stylesheet" href="styles/section.css" />
+    <link rel="stylesheet" href="styles/headline.css" />
     <title>final exam</title>
   </head>
   <body>
@@ -71,13 +75,13 @@
             <nav class="navbar__menu menu" aria-label="Main navigation">
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a class="menu__link" href="#">Lorem</a>
+                  <a class="menu__link" href="#lorem">Lorem</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__link" href="#">Ipsum</a>
+                  <a class="menu__link" href="#Ipsum">Ipsum</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__link" href="#">Dolor</a>
+                  <a class="menu__link" href="#Dolor">Dolor</a>
                 </li>
                 <li class="menu__list-item">
                   <a class="menu__link" href="#">Sit</a>
@@ -240,7 +244,7 @@
               ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <a href="#" class="button hero__button">Lorem ipsum</a>
+            <a href="#" class="button button--icon hero__button">Lorem ipsum</a>
           </div>
 
           <div class="col-sm-6 collage hero__images">
@@ -265,7 +269,7 @@
               <p class="card__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit
               </p>
-              <a href="#" class="button card__button"></a>
+              <a href="#" class="button button--icon card__button"></a>
             </div>
           </div>
 
@@ -275,7 +279,7 @@
               <p class="card__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit
               </p>
-              <a href="#" class="button card__button"></a>
+              <a href="#" class="button button--icon card__button"></a>
             </div>
           </div>
 
@@ -285,60 +289,316 @@
               <p class="card__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit
               </p>
-              <a href="#" class="button card__button"></a>
+              <a href="#" class="button button--icon card__button"></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="ipsum">
-      <div class="container ipsum__container">
-        <div class="ipsum__header">
-          <h2 class="ipsum__title">Lorem ipsum dolor sit amet</h2>
-          <a href="#" class="button ipsum__button">Lorem ipsum</a>
+    <section id="lorem" class="section">
+      <div class="container container__section">
+        <div class="headline">
+          <h2 class="headline__title">Lorem ipsum dolor sit amet</h2>
+          <a href="#" class="button button--icon headline__button"
+            >Lorem ipsum</a
+          >
         </div>
 
-        <div class="ipsum__cards" >
-          <div class="card card__ipsum">
-            <img
-              class="collage__img collage__img__square"
-              src="images/photos/FPO-Square.jpg"
-              alt="FPO"
-            />
-            <a href="#" class="button ipsum__button">NEWS</a>
-            <p class="ipsum__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
-            <a href="#">Read more</a>
+        <div class="card-slider">
+          <div class="card card--secondary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <a href="#" class="button card__button">NEWS</a>
+              <p class="card__date">01.28.2025</p>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <a class="car__link" href="#">Read more</a>
+            </div>
           </div>
 
-          <div class="card card__ipsum">
-            <img
-              class="collage__img collage__img__square"
-              src="images/photos/FPO-Square.jpg"
-              alt="FPO"
-            />
-            <a href="#" class="button ipsum__button">NEWS</a>
-            <p class="ipsum__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
-            <a href="#">Read more</a>
+          <div class="card card--secondary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <a href="#" class="button card__button">NEWS</a>
+              <p class="card__date">01.14.2025</p>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <a class="car__link" href="#">Read more</a>
+            </div>
           </div>
 
-          <div class="card card__ipsum">
-            <img
-              class="collage__img collage__img__square"
-              src="images/photos/FPO-Square.jpg"
-              alt="FPO"
-            />
-            <a href="#" class="button ipsum__button">NEWS</a>
-            <p class="ipsum__paragraph">
+          <div class="card card--secondary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <a href="#" class="button card__button">NEWS</a>
+              <p class="card__date">11.05.2024</p>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <a class="car__link" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Ipsum" class="section section--charcoal-blue">
+      <div class="container container__section--charcoal-blue">
+        <div class="headline headline--secondary">
+          <div class="headline__text">
+            <h2 class="headline__title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h2>
+
+            <p class="headline__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <a href="#">Read more</a>
+          </div>
+
+          <a href="#" class="button button--icon headline__button">
+            Lorem ipsum dolor
+          </a>
+        </div>
+
+        <div class="card-collection">
+          <div class="card card--tertiary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <h3 class="card__title">Lorem ipsum</h3>
+
+              <a href="#" class="button button--icon card__button"></a>
+            </div>
+          </div>
+
+          <div class="card card--tertiary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <h3 class="card__title">Lorem ipsum</h3>
+
+              <a href="#" class="button button--icon card__button"></a>
+            </div>
+          </div>
+
+          <div class="card card--tertiary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <h3 class="card__title">Lorem ipsum</h3>
+
+              <a href="#" class="button button--icon card__button"></a>
+            </div>
+          </div>
+
+          <div class="card card--tertiary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <h3 class="card__title">Lorem ipsum</h3>
+
+              <a href="#" class="button button--icon card__button"></a>
+            </div>
+          </div>
+
+          <div class="card card--tertiary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <h3 class="card__title">Lorem ipsum</h3>
+
+              <a href="#" class="button button--icon card__button"></a>
+            </div>
+          </div>
+
+          <div class="card card--tertiary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <h3 class="card__title">Lorem ipsum</h3>
+
+              <a href="#" class="button button--icon card__button"></a>
+            </div>
+          </div>
+
+          <div class="card card--tertiary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <h3 class="card__title">Lorem ipsum</h3>
+
+              <a href="#" class="button button--icon card__button"></a>
+            </div>
+          </div>
+
+          <div class="card card--tertiary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <h3 class="card__title">Lorem ipsum</h3>
+
+              <a href="#" class="button button--icon card__button"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Dolor" class="section section--white">
+      <div class="container container__section--white">
+        <div class="headline headline--tertiary">
+          <div class="headline__text">
+            <h2 class="headline__title">Lorem ipsum dolor sit amet</h2>
+
+            <p class="headline__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+
+          <a href="#" class="button button--icon headline__button">
+            Lorem ipsum dolor
+          </a>
+        </div>
+
+        <div class="card-deck">
+          <!-- Card 1 -->
+          <div class="card card--quaternary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+
+            <div class="card__content">
+              <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <a href="#" class="button card__button button--icon"></a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+
+          <div class="card card--quaternary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+            <div class="card__content">
+              <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <a href="#" class="button card__button button--icon"></a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+
+          <div class="card card--quaternary">
+            <div class="card__img__wrapper">
+              <img
+                class="card__img"
+                src="images/photos/FPO-Square.jpg"
+                alt="FPO"
+              />
+            </div>
+            <div class="card__content">
+              <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <a href="#" class="button card__button button--icon"></a>
+            </div>
           </div>
         </div>
       </div>
