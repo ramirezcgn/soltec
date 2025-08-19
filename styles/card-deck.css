@@ -1,0 +1,18 @@
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  padding: 0;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
