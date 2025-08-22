@@ -35,11 +35,13 @@
       .hero__content {
         .hero__title {
           color: var(--color-white);
-          margin-top: 62px;
-          margin-bottom: 18px;
+          margin-top: 60px;
+          margin-bottom: 17px;
+          padding-right: 14px;
           @media (min-width: 768px) {
             margin-top: 93px;
             margin-bottom: 17px;
+            padding: 0;
           }
 
           @media (min-width: 1024px) {
@@ -72,7 +74,9 @@
     .hero__down {
       border: 1px solid var(--color-red);
       margin: 0;
+      backdrop-filter: blur(12.5px);
     }
+    
     .hero__card__col:nth-child(2) {
       border-top: 1px solid var(--color-red);
       border-bottom: 1px solid var(--color-red);

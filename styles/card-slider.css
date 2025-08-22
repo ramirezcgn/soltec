@@ -1,19 +1,30 @@
 .card-slider {
   display: flex;
-  gap: 25px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   margin-right: -24px;
+  gap: 25px;
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
-
+  @media (min-width: 1288px) {
+    margin: -12.5px;
+    gap: 0;
+  }
+  /*
   @media (min-width: 1024px) {
     margin-right: -32px;
   }
-
+*/
   @media (min-width: 1288px) {
-    margin-right: 0;
+    overflow-x: visible;
   }
-} 
+
+  .card-slider__item {
+    padding: 0;
+    @media (min-width: 1288px) {
+      padding: 12.5px;
+    }
+  }
+}

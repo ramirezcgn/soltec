@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: end;
   margin-top: -3px;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   color: var(--color-Midnight-Blue);
   @media (min-width: 768px) {
     flex-direction: row;
@@ -103,7 +103,7 @@
 
   .headline--tertiary & {
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 17px;
     @media (min-width: 768px) {
       line-height: 1.33;
       margin-bottom: 15px;
