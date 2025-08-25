@@ -1,6 +1,14 @@
 .collage {
   display: flex;
   align-self: flex-start;
+  &.collage--intro {
+    .collage__img__square {
+      order: 1;
+    }
+    .collage__img__rectangular {
+      order: 2; 
+    }
+  }
 
   .collage__img {
     object-fit: cover;
@@ -21,6 +29,12 @@
     @media (min-width: 1288px) {
       margin-top: 10%;
     }
+    .collage--intro & {
+      margin-left: -18px;
+      margin-top: 32px;
+      width: 60%;
+      aspect-ratio: 0.666;
+    }
   }
 
   .collage__img__square {
@@ -28,5 +42,10 @@
     aspect-ratio: 1.04;
     align-self: end;
     width: 46%;
+    .collage--intro & {
+      width: 45%;
+      margin-left: 3px;
+      aspect-ratio: 1.07;
+    }
   }
 }
