@@ -2,6 +2,7 @@
   display: flex;
   align-self: flex-start;
   &.collage--intro {
+    justify-content: space-evenly;
     .collage__img__square {
       order: 1;
     }
@@ -20,6 +21,7 @@
     align-self: center;
     width: 62%;
     aspect-ratio: 0.67;
+    border-radius: 4px;
     @media (min-width: 768px) {
       margin-top: 26%;
     }
@@ -30,10 +32,29 @@
       margin-top: 10%;
     }
     .collage--intro & {
-      margin-left: -18px;
-      margin-top: 32px;
       width: 60%;
-      aspect-ratio: 0.666;
+      margin-left: -22px;
+      margin-top: 32px;
+      margin-bottom: 40px;
+      z-index: -1;
+      @media (min-width: 768px) {
+        width: 50%;
+        margin-top: 70px;
+        margin-left: -45px;
+      }
+
+      @media (min-width: 1024px) {
+        width: 53%;
+        margin-top: 29px;
+        margin-left: -53px;
+        margin-bottom: 61px;
+      }
+
+      @media (min-width: 1228px) {
+        width: 51%;
+        margin-left: -59px;
+        margin-bottom: 57px;
+      }
     }
   }
 
@@ -42,10 +63,23 @@
     aspect-ratio: 1.04;
     align-self: end;
     width: 46%;
+    border-radius: 4px;
     .collage--intro & {
-      width: 45%;
       margin-left: 3px;
-      aspect-ratio: 1.07;
+      @media (min-width: 768px) {
+        width: 40%;
+        margin-left: 10px;
+      }
+
+      @media (min-width: 1024px) {
+        width: 41%;
+        margin-left: 18px;
+      }
+      
+      @media (min-width: 1228px) {
+        width: 38%;
+        margin-left: 72px;
+      }
     }
   }
 }

@@ -15,8 +15,7 @@
     padding-top: calc(var(--section-spacing-top) * 0.75);
     padding-bottom: calc(var(--section-spacing-bottom) * 0.84);
   }
-
-  @media (min-width: 1024px) {
+  @media (min-width: 1228px) {
     padding-bottom: var(--section-spacing-bottom);
   }
 
@@ -46,18 +45,28 @@
     position: relative;
     padding-top: calc(var(--section-spacing-top) * 0.8);
     padding-bottom: calc(var(--section-spacing-bottom) * 0.63);
-
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("../images/photos/vector.svg");
-    background-size: 165% auto;
-    background-position: -18% -2%;
-    background-repeat: no-repeat;
-    opacity: 1;
-    z-index: -1;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("../images/photos/vector.svg");
+      background-size: 750px 400px;
+      background-position: 10% -3%;
+      background-repeat: no-repeat;
+      opacity:1;
+      z-index: -1;
+      @media (min-width: 768px) {
+        background-size: 106% 93%;
+        background-position: -64% 27%;
+      }
+      @media (min-width: 1024px) {
+        background-size: 94% 96%;
+        background-position: 62% 5%;
+      }
+      @media (min-width: 1288px) {    
+        background-size: 88% 97%;
+        background-position: 16% 3%;
+      }
+    }
   }
 }
