@@ -14,7 +14,8 @@
 .container__section,
 .container__section--charcoal-blue,
 .container__section--white,
-.container__section--vector {
+.container__section--vector,
+.container__section--vector__reversed {
   position: relative;
   margin: 0 auto;
 }

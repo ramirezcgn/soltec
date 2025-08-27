@@ -33,27 +33,29 @@
     }
     .collage--intro & {
       width: 60%;
-      margin-left: -22px;
-      margin-top: 32px;
-      margin-bottom: 40px;
+      margin-left: -7%;
+      margin-top: 11%;
+      margin-bottom: 13%;
       z-index: -1;
       @media (min-width: 768px) {
-        width: 50%;
-        margin-top: 70px;
-        margin-left: -45px;
+        width: 51%;
+        margin-top: 18%;
+        margin-left: -13%;
+        margin-bottom: 10%;
       }
 
       @media (min-width: 1024px) {
         width: 53%;
-        margin-top: 29px;
-        margin-left: -53px;
-        margin-bottom: 61px;
+        margin-top: 6%;
+        margin-bottom: 13%;
+        margin-left: -12%;
       }
 
       @media (min-width: 1228px) {
         width: 51%;
-        margin-left: -59px;
-        margin-bottom: 57px;
+        margin-top: 4%;
+        margin-left: -10%;
+        margin-bottom: 9%;
       }
     }
   }
@@ -64,21 +66,31 @@
     align-self: end;
     width: 46%;
     border-radius: 4px;
+    @media (min-width: 768px) {
+      aspect-ratio: 1.05;
+    }
+    @media (min-width: 1024px) {
+      aspect-ratio: 1.06;
+    }
+      
     .collage--intro & {
-      margin-left: 3px;
+      margin-left: 1%;
+      aspect-ratio: 1;
       @media (min-width: 768px) {
-        width: 40%;
-        margin-left: 10px;
+        width: 38%;
+        margin-left: 4%;
+        aspect-ratio: 1.02;
       }
 
       @media (min-width: 1024px) {
-        width: 41%;
-        margin-left: 18px;
+        width: 40%;
+        margin-left: 3%;
       }
       
       @media (min-width: 1228px) {
         width: 38%;
-        margin-left: 72px;
+        margin-left: 12%;
+        aspect-ratio: 1;
       }
     }
   }

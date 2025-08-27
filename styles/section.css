@@ -1,10 +1,10 @@
 :root {
-  --section-spacing-top: 90px; 
-  --section-spacing-bottom: 138px; 
+  --section-spacing-top: 90px;
+  --section-spacing-bottom: 138px;
 
   @media (min-width: 768px) {
-    --section-spacing-top: 80px; 
-    --section-spacing-bottom: 146px; 
+    --section-spacing-top: 80px;
+    --section-spacing-bottom: 146px;
   }
 }
 
@@ -44,7 +44,7 @@
   &.section--vector {
     position: relative;
     padding-top: calc(var(--section-spacing-top) * 0.8);
-    padding-bottom: calc(var(--section-spacing-bottom) * 0.63);
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.86);
     &::before {
       content: "";
       position: absolute;
@@ -53,7 +53,7 @@
       background-size: 750px 400px;
       background-position: 10% -3%;
       background-repeat: no-repeat;
-      opacity:1;
+      opacity: 0.5;
       z-index: -1;
       @media (min-width: 768px) {
         background-size: 106% 93%;
@@ -63,10 +63,40 @@
         background-size: 94% 96%;
         background-position: 62% 5%;
       }
-      @media (min-width: 1288px) {    
-        background-size: 88% 97%;
-        background-position: 16% 3%;
+      @media (min-width: 1288px) {
+        background-size: 98% 101%;
+        background-position: -150% -13%;
       }
+    }
+  }
+
+  &.section--vector__reversed {
+    position: relative;
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.13);
+    z-index: 2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("../images/photos/globe.png");
+      background-repeat: no-repeat;
+      background-size: 700px;
+      background-position: 50% 200%;
+      z-index: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: var(--color-Charcoal-Navy);
+      z-index: 1;
+    }
+
+    > * {
+      position: relative;
+      z-index: 2;
     }
   }
 }

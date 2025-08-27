@@ -1,16 +1,29 @@
-.component__intro {
+.component {
   display: grid;
   grid-template-columns: 1fr;
-  
+  grid-template-areas:
+    "headline"
+    "collage";
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     align-items: center; 
     align-content: space-between;
+    grid-template-areas: "headline collage";
   } 
 
   @media (min-width: 1228px) {
-    margin-right: -93px;
+    margin-right: -7%;
+  }
+
+  &.component__intro--reversed {
+    grid-template-areas:
+      "collage"
+      "headline";
+    @media (min-width: 768px) {
+      grid-template-areas: "collage headline";
+    } 
   }
 }
 
-
+.headline--fifth { grid-area: headline; }
+.collage--intro  { grid-area: collage;  }
