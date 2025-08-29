@@ -26,4 +26,5 @@
 }
 
 .headline--fifth { grid-area: headline; }
+.headline--sixth { grid-area: headline; }
 .collage--intro  { grid-area: collage;  }

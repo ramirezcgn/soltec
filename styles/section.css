@@ -24,12 +24,11 @@
     padding-top: calc(var(--section-spacing-top) * 0.8);
     padding-bottom: calc(var(--section-spacing-bottom) * 0.63);
     @media (min-width: 768px) {
-      padding-bottom: calc(var(--section-spacing-bottom) * 0.62);
+      padding-top: calc(var(--section-spacing-top) * 0.76);
     }
 
     @media (min-width: 1024px) {
       padding-top: calc(var(--section-spacing-top) * 0.6);
-      padding-bottom: calc(var(--section-spacing-bottom) * 0.63);
     }
 
     @media (min-width: 1288px) {
@@ -44,7 +43,10 @@
   &.section--vector {
     position: relative;
     padding-top: calc(var(--section-spacing-top) * 0.8);
-    padding-bottom: calc(var(--section-spacing-bottom) * 0.86);
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.866);
+    @media (min-width: 768px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.145);
+    }
     &::before {
       content: "";
       position: absolute;
@@ -72,31 +74,46 @@
 
   &.section--vector__reversed {
     position: relative;
-    padding-bottom: calc(var(--section-spacing-bottom) * 0.13);
-    z-index: 2;
-
+    overflow: hidden;
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.514);
+    background-color: var(--color-Charcoal-Blue);
+    @media (min-width: 768px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.184);
+    }
     &::before {
       content: "";
       position: absolute;
       inset: 0;
-      background-image: url("../images/photos/globe.png");
+      background-image: url(../images/photos/globe.png);
       background-repeat: no-repeat;
-      background-size: 700px;
-      background-position: 50% 200%;
+      background-size: cover;
+      background-position: 50% bottom;
+      height: 125%;
+      width: 100%;
+      top: 48%;
       z-index: 0;
+      @media (min-width: 768px) {
+        background-position: 50% bottom;
+        height: 150%;
+        width: 100%;
+        top: 20%;
+        left: 25%;
+      }
     }
 
     &::after {
       content: "";
       position: absolute;
       inset: 0;
-      background-color: var(--color-Charcoal-Navy);
+      background: linear-gradient(0deg,rgba(29, 33, 44, 1) 0%, rgba(29, 33, 44, 0) 100%);
       z-index: 1;
+      pointer-events: none;
     }
 
     > * {
       position: relative;
       z-index: 2;
+      color: #fff;
     }
   }
-}
+} 

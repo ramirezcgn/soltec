@@ -58,6 +58,18 @@
         margin-bottom: 9%;
       }
     }
+
+    .collage--intro__reversed & {
+      margin-top: 3%;
+      width: 60%;
+      margin-bottom: 12%;
+      @media (min-width: 768px) {
+        margin-top: 11%;
+        width: 50%;
+        margin-bottom: 10%;
+        margin-left: 7%;
+      }
+    }
   }
 
   .collage__img__square {
@@ -91,6 +103,14 @@
         width: 38%;
         margin-left: 12%;
         aspect-ratio: 1;
+      }
+    }
+
+    .collage--intro__reversed & {
+      width: 45%;
+      margin-left: -6%;
+      @media (min-width: 768px) {
+        width: 38%;
       }
     }
   }
