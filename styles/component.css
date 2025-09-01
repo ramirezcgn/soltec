@@ -11,7 +11,7 @@
     grid-template-areas: "headline collage";
   } 
 
-  @media (min-width: 1228px) {
+  @media (min-width: 1440px) {
     margin-right: -7%;
   }
 
