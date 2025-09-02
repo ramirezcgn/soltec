@@ -34,7 +34,8 @@
     }
 
     @media (min-width: 1024px) {
-      padding-top: calc(var(--section-spacing-top) * 0.63);
+      padding-top: calc(var(--section-spacing-top) * 0.6);
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.63);
     }
 
     @media (min-width: 1288px) {
@@ -56,7 +57,7 @@
     }
 
     @media (min-width: 1024px) {
-      padding-bottom: calc(var(--section-spacing-bottom) * 0.41);
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.403);
     }
 
     @media (min-width: 1228px) {
@@ -89,12 +90,12 @@
   }
 
   &.section--vector__reversed {
-    position: relative;
     overflow: hidden;
+    position: relative;
+    z-index: 0; 
     padding-bottom: calc(var(--section-spacing-bottom) * 0.514);
     background-color: var(--color-Charcoal-Blue);
     @media (min-width: 768px) {
-      position: absolute;
       padding-bottom: calc(var(--section-spacing-bottom) * 0.184);
     }
 
@@ -105,50 +106,67 @@
     @media (min-width: 1228px) {
       padding-bottom: calc(var(--section-spacing-bottom) * 0.73);
     }
-      position: relative;
-      z-index: 0; 
-      &::before , 
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
 
+    &::before , 
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+    }
 
-      }
-      &::before {
-        left: 50%;
-        transform: translateX(-50%);
-        width: 190%;
-        aspect-ratio: 1;
-        background-image: url(../images/photos/globe.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center top;
-        z-index: 0;
-        @media (min-width: 768px) {
-          left: 74%;
-          top: 22%;
-          width: 85%;
-        }
-
-        @media (min-width: 1228px) {
-          left: 72%;
-          top: 19%;
-          width: 77%;
-        }
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 190%;
+      aspect-ratio: 1;
+      background-image: url(../images/photos/globe.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center top;
+      z-index: 0;
+      @media (min-width: 768px) {
+        left: 74%;
+        top: 22%;
+        width: 85%;
       }
 
-      &::after {
-        left: 0;
-        width: 100%;
-        height: 50%;
-        background: linear-gradient(0deg, rgba(29, 33, 44, 1) 0%, rgba(29, 33, 44, 0) 100%);
-        z-index: 1; 
-        pointer-events: none;
-        @media (min-width: 768px) {
-          display: none;
-        }
+      @media (min-width: 1228px) {
+        left: 72%;
+        top: 19%;
+        width: 77%;
       }
-    
+    }
+
+    &::after {
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(0deg, rgba(29, 33, 44, 1) 0%, rgba(29, 33, 44, 0) 100%);
+      z-index: 1; 
+      pointer-events: none;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &.section--red {
+    background-color: var(--color-red);
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.87);
+    @media (min-width: 768px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.83);
+    }
+
+    @media (min-width: 1024px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.82);
+    }
+
+    @media (min-width: 1228px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.8);
+    }
+  }
+
+  &.section--footer {
+    background-color: var(--color-Charcoal-Blue)
   }
 } 
