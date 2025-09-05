@@ -1,54 +1,102 @@
-/*.footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  @media (min-width: 1024px) {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-      "logo links"
-      "description button";
-  }
-}
-
-.logo           { grid-area: logo; }
-.descriptions   { grid-area: description; }
-.links          { grid-area: links; }
-.footer__button { grid-area: button; }
-*/
 .footer-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  margin-bottom: 33px;
+  @media (min-width: 1024px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+  }
 
   .logo {
-    text-align: center;
+    flex: 1 1 calc(50% - 32px);
+    text-align: left;
+    padding-left: 4%;
+    @media (min-width: 768px) {
+      text-align: center;
+      padding-left: 0;
+      padding-right: 11%;
+    }
+
+    @media (min-width: 1024px) {
+      order: 1;
+      padding: 0;
+      text-align: left;
+      flex: 1 1 25%;
+    }
+    
+    @media (min-width: 1228px) {
+      margin-left: 0;
+      flex: 1 1 25%;
+    }
 
     .img__logo {
-      width: 180px;
-      height: auto; 
+      filter: invert(100%);
+      width: 204px;
+      height: auto;
     }
   }
 
   .descriptions {
-    p {
-      line-height: 1.6;
+    flex: 1 1 calc(50% - 32px);
+    margin-bottom: 30px;
+    @media (min-width: 1024px) {
+      order: 3;
+      flex: 1 1 calc(56% - 32px);
+    }
+    
+    .text {
+      font-size: 12px;
+      line-height: 20px;
+      padding-right: 3px;
+      margin-top: 10px;
+      @media (min-width: 1024px) {
+        margin: 0;
+        margin-top: 27px;
+      }
     }
   }
 
   .links {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex: 1 1 calc(50% - 32px);
+    gap: 26px;
+    margin-bottom: 41px;
+    @media (min-width: 1024px) {
+      order: 2;
+      flex-wrap: nowrap;
+      align-items: center;
+      flex: 1 1 75%;
+      margin-top: 15px;
+      margin-bottom: 0;
+      gap: 119px;
+    }
+
+    @media (min-width: 1228px) {
+      flex: 1 1 75%;
+      padding-left: 6px;
+      gap: 183px;
+    }
 
     a {
       text-decoration: none;
       color: inherit;
+      flex-basis: calc(50% - 13px); 
     }
   }
 
   .footer__button {
-    text-align: center;
+    text-align: left;
+    flex: 1 1 calc(50% - 32px);
+    @media (min-width: 1024px) {
+      order: 4;
+      flex: 1 1 calc(40% - 32px);
+      text-align: end;
+      margin-top: 28px;
+    }
 
     .button {
       display: inline-flex;
@@ -56,40 +104,68 @@
       justify-content: center;
     }
   }
+}
 
+.footer-meta {
+  display: flex;
+  flex-direction: column;
   @media (min-width: 1024px) {
-    flex-wrap: wrap;
-    gap: 32px 64px;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .logo, .descriptions {
-      flex: 1 1 calc(50% - 32px);
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 34px;
+    @media (min-width: 1024px) {
+      gap: 22px;
     }
+    .text__icon {
+      font-size: 13px;
+      @media (min-width: 1024px) {
+        margin-top: 3px;
+      }
+    } 
 
-    .links, .footer__button {
-      flex: 1 1 calc(50% - 32px);
-    }
-
-    .descriptions {
-      order: 2;
-    }
-
-    .footer__button {
-      order: 4;
-    }
-
-    .logo {
-      text-align: left;
-
-      .img__logo {
-        width: 250px;
-        height: 70px;
+    .icon {
+      width: 30px;
+      height: auto;
+      @media (min-width: 1024px) {
+        width: 20px;
+        margin-bottom: 10px;
       }
     }
+  }
 
-    .links {
+  .Policies {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 14px;
+    margin-bottom: 20px;
+    @media (min-width: 1024px) {
       flex-direction: row;
-      justify-content: flex-start;
-      gap: 16px;
+      margin-bottom: 45px;
+      gap: 18px;
+    }
+    @media (min-width: 1024px) {
+      gap: 45px;
+    }
+
+      .link {
+        text-decoration: none;
+        color: inherit; 
+      }
+  }
+
+  .date {
+    .text {
+      font-size: 12px;
+      margin: 0;
+      margin-bottom: 45px;
     }
   }
-}
+} 

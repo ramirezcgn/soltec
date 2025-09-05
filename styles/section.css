@@ -167,6 +167,18 @@
   }
 
   &.section--footer {
-    background-color: var(--color-Charcoal-Blue)
+    padding-top: calc(var(--section-spacing-top) * 0.53);
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.3);
+    background-color: var(--color-Charcoal-Blue);
+    color: var(--color-white);
+    @media (min-width: 768px) {
+      padding-top: calc(var(--section-spacing-top) * 0.6);
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.1);
+    }
+
+    @media (min-width: 1024px) {
+      padding-top: calc(var(--section-spacing-top) * 0.7);
+      padding-bottom: calc(var(--section-spacing-bottom) - 136px);
+    }
   }
 } 
