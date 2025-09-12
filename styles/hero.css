@@ -32,7 +32,16 @@
     margin: 0 auto;
 
     .hero__top {
+      margin-top: 24px;
       margin-bottom: 40px;
+      @media (min-width: 1024px) {
+        margin-top: 40px;
+      }
+
+      @media (min-width: 1228px) {
+        margin-top: 56px;
+      }
+
       .hero__content {
         .hero__title {
           color: var(--color-white);
