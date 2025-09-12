@@ -81,7 +81,7 @@
       }
     }
 
-    .hero__down {
+    .hero__bottom {
       border: 1px solid var(--color-red);
       margin: 0;
       backdrop-filter: blur(12.5px);
