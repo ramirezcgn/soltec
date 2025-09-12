@@ -3,25 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/grid.css" />
-    <link rel="stylesheet" href="styles/typography.css" />
-    <link rel="stylesheet" href="styles/cards.css" />
-    <link rel="stylesheet" href="styles/promotion.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/card-slider.css" />
-    <link rel="stylesheet" href="styles/card-collection.css" />
-    <link rel="stylesheet" href="styles/card-deck.css" />
-    <link rel="stylesheet" href="styles/buttons.css" />
-    <link rel="stylesheet" href="styles/collage.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/hero.css" />
-    <link rel="stylesheet" href="styles/section.css" />
-    <link rel="stylesheet" href="styles/headline.css" />
-    <link rel="stylesheet" href="styles/component.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-
+    <link rel="stylesheet" href="styles/index.css" />
     <title>final exam</title>
   </head>
   <body>
@@ -60,19 +42,19 @@
                 <a class="menu__link" href="#lorem">Lorem</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__link" href="#Ipsum">Ipsum</a>
+                <a class="menu__link" href="#ipsum">Ipsum</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__link" href="#Dolor">Dolor</a>
+                <a class="menu__link" href="#dolor">Dolor</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__link" href="#Sit">Sit</a>
+                <a class="menu__link" href="#sit">Sit</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__link" href="#Amet">Amet</a>
+                <a class="menu__link" href="#amet">Amet</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__link" href="#Consectetur">Consectetur</a>
+                <a class="menu__link" href="#consectetur">Consectetur</a>
               </li>
             </ul>
           </nav>
@@ -216,7 +198,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="layout">
       <section class="hero">
         <img
           src="images/photos/background-mobile-tablet.png"
@@ -225,19 +207,6 @@
         />
         <video autoplay muted loop playsinline class="hero__background__video">
           <source src="videos/video.mp4" type="video/mp4" />
-          <track
-            kind="subtitles"
-            src="videos/video-subtitles.vtt"
-            srclang="en"
-            label="English Subtitles"
-            default
-          />
-          <track
-            kind="descriptions"
-            src="videos/video-descriptions.vtt"
-            srclang="en"
-            label="English Descriptions"
-          />
         </video>
 
         <div class="container hero__container">
@@ -246,11 +215,13 @@
               <h1 class="hero__title">Lorem ipsum dolor sit amet</h1>
               <p class="hero__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <a href="#" class="button button--icon hero__button">Lorem ipsum</a>
+              <a href="#" class="button button--icon hero__button"
+                >Lorem ipsum</a
+              >
             </div>
 
             <div class="col-sm-6 collage hero__images">
@@ -268,7 +239,7 @@
             </div>
           </div>
 
-          <div class="row hero__down">
+          <div class="row hero__bottom">
             <div class="col col-sm-4 hero__card__col">
               <a href="#" class="card card--primary">
                 <h4 class="card__title">Lorem ipsum dolor sit...</h4>
@@ -325,7 +296,8 @@
                   <p class="card__date">01.28.2025</p>
                   <p class="card__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
                   </p>
                   <span href="#" class="card__link">Read more</span>
                 </div>
@@ -347,7 +319,8 @@
                   <p class="card__date">01.14.2025</p>
                   <p class="card__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
                   </p>
                   <span class="card__link" href="#">Read more</span>
                 </div>
@@ -369,7 +342,8 @@
                   <p class="card__date">11.05.2024</p>
                   <p class="card__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
                   </p>
                   <span class="card__link" href="#">Read more</span>
                 </div>
@@ -378,7 +352,7 @@
           </div>
         </div>
       </section>
-      <section id="Ipsum" class="section section--charcoal-blue">
+      <section id="ipsum" class="section section--charcoal-blue">
         <div class="container">
           <div class="headline headline--secondary">
             <div class="headline__text">
@@ -528,7 +502,7 @@
           </div>
         </div>
       </section>
-      <section id="Dolor" class="section section--white">
+      <section id="dolor" class="section section--white">
         <div class="container">
           <div class="headline headline--tertiary">
             <div class="headline__text">
@@ -537,12 +511,12 @@
               <p class="headline__description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
               </p>
             </div>
 
@@ -564,8 +538,8 @@
               <div class="card__content">
                 <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
                 <p class="card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
                 <span href="#" class="button card__button button--icon"></span>
               </div>
@@ -582,8 +556,8 @@
               <div class="card__content">
                 <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
                 <p class="card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
                 <span href="#" class="button card__button button--icon"></span>
               </div>
@@ -600,8 +574,8 @@
               <div class="card__content">
                 <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
                 <p class="card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
                 <span href="#" class="button card__button button--icon"></span>
               </div>
@@ -609,7 +583,7 @@
           </div>
         </div>
       </section>
-      <section id="Sit" class="section section--vector">
+      <section id="sit" class="section section--vector">
         <div class="container">
           <div class="component component__intro">
             <div class="headline headline--fifth">
@@ -645,7 +619,7 @@
           </div>
         </div>
       </section>
-      <section id="Amet" class="section section--vector__reversed">
+      <section id="amet" class="section section--vector__reversed">
         <div class="container">
           <div class="component component__intro--reversed">
             <div class="headline headline--sixth">
@@ -679,7 +653,7 @@
           </div>
         </div>
       </section>
-      <section id="Consectetur" class="section section--red">
+      <section id="consectetur" class="section section--red">
         <div class="container">
           <div class="promotion__red">
             <div class="headline--promotion">
@@ -707,15 +681,15 @@
         </div>
       </section>
     </main>
-    <footer id="Footer" class="section section--footer">
+    <footer id="footer" class="section section--footer">
       <div class="container">
-        <div class="footer-wrapper">
-          <div class="logo">
+        <div class="footer footer__wrapper">
+          <div class="footer__logo">
             <img class="img__logo" src="images/icons/logo.svg" alt="logo" />
           </div>
 
-          <div class="descriptions">
-            <p class="text">
+          <div class="footer__descriptions">
+            <p class="footer__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem
               ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -731,14 +705,14 @@
             </p>
           </div>
 
-          <div class="links">
-            <a class="link" href="#"> Lorem ipsum </a>
+          <div class="footer__links">
+            <a class="footer__link" href="#"> Lorem ipsum </a>
 
-            <a class="link" href="#"> Lorem ipsum </a>
+            <a class="footer__link" href="#"> Lorem ipsum </a>
 
-            <a class="link" href="#"> Lorem ipsum </a>
+            <a class="footer__link" href="#"> Lorem ipsum </a>
 
-            <a class="link" href="#"> Lorem ipsum </a>
+            <a class="footer__link" href="#"> Lorem ipsum </a>
           </div>
 
           <div class="footer__button">
@@ -746,8 +720,8 @@
           </div>
         </div>
 
-        <div class="footer-meta">
-          <div class="icons">
+        <div class="footer__meta">
+          <div class="footer__icons">
             <p class="text__icon">Connect with us:</p>
 
             <img
@@ -763,16 +737,16 @@
             />
           </div>
 
-          <div class="Policies">
-            <a class="link" href="#"> Privacy Policy </a>
+          <div class="footer__policies">
+            <a class="footer__link" href="#"> Privacy Policy </a>
 
-            <a class="link" href="#"> Terms & Conditions </a>
+            <a class="footer__link" href="#"> Terms & Conditions </a>
 
-            <a class="link" href="#"> Terms of Use </a>
+            <a class="footer__link" href="#"> Terms of Use </a>
           </div>
 
-          <div class="date">
-            <p class="text">@ 2025 Lorem Ipsum</p>
+          <div class="footer__date">
+            <p class="footer__text">@ 2025 Lorem Ipsum</p>
           </div>
         </div>
       </div>

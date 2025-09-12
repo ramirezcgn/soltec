@@ -8,15 +8,15 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media (min-width: 1024px) {
+    margin-right: -32px;
+  } 
   @media (min-width: 1288px) {
     margin: -12.5px;
     gap: 0;
   }
-  /*
-  @media (min-width: 1024px) {
-    margin-right: -32px;
-  }
-*/
+
   @media (min-width: 1288px) {
     overflow-x: visible;
   }

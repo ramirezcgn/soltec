@@ -52,7 +52,7 @@
 .card__category {
   display: inline-block;
   background: #d3d9e3;
-  color: #2c3e50;
+  color: var(--color-Midnight-Blue);
   font-size: 14px;
   font-weight: 700;
   padding: 3px 14px;
