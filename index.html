@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/grid.css" />
     <link rel="stylesheet" href="styles/typography.css" />
     <link rel="stylesheet" href="styles/cards.css" />
+    <link rel="stylesheet" href="styles/promotion.css" />
+    <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/card-slider.css" />
     <link rel="stylesheet" href="styles/card-collection.css" />
     <link rel="stylesheet" href="styles/card-deck.css" />
@@ -17,513 +19,703 @@
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/section.css" />
     <link rel="stylesheet" href="styles/headline.css" />
+    <link rel="stylesheet" href="styles/component.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
     <title>final exam</title>
   </head>
   <body>
-    <!-- Hero component -->
-    <section class="hero">
-      <img
-        src="images/photos/background-mobile-tablet.png"
-        alt="Fondo celular y tablet"
-        class="hero__background__image"
-      />
-      <video autoplay muted loop playsinline class="hero__background__video">
-        <source src="videos/video.mp4" type="video/mp4" />
-        <track
-          kind="subtitles"
-          src="videos/video-subtitles.vtt"
-          srclang="en"
-          label="English Subtitles"
-          default
-        />
-        <track
-          kind="descriptions"
-          src="videos/video-descriptions.vtt"
-          srclang="en"
-          label="English Descriptions"
-        />
-      </video>
-      <!-- Navbar component -->
-      <header class="header">
-        <div class="navbar">
-          <div class="navbar__left">
-            <div class="navbar__logo">
+    <header class="header">
+      <div class="navbar">
+        <div class="navbar__left">
+          <div class="navbar__logo">
+            <svg
+              aria-hidden="true"
+              version="1.1"
+              viewBox="0 0 222 44"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                transform="translate(0,2)"
+                d="m40 13.468c1e-4 -2.686-0.8109-5.3094-2.327-7.5266-1.5161-2.2172-3.6665-3.9248-6.1695-4.8992-2.503-0.97437-5.242-1.1701-7.858-0.56143-2.6162 0.60862-4.9875 1.9932-6.8034 3.9723h-16.842v35.547h35.56v-16.613c1.3956-1.2483 2.5125-2.7769 3.2776-4.4861 0.765-1.7092 1.1611-3.5603 1.1623-5.4329zm-6.8421 0c0.0027 1.287-0.3765 2.546-1.0896 3.6175-0.7132 1.0714-1.7281 1.9073-2.9165 2.4016-1.1884 0.4945-2.4966 0.6253-3.7594 0.3757-1.2626-0.2494-2.4229-0.8678-3.334-1.777-0.911-0.9092-1.5318-2.0682-1.7839-3.3304-0.2521-1.2621-0.124-2.5707 0.3679-3.76 0.4919-1.1894 1.3256-2.2061 2.3955-2.9215 1.0701-0.71535 2.3282-1.0972 3.6153-1.0972 1.7228 0 3.3753 0.68347 4.5947 1.9004 1.2196 1.217 1.9065 2.868 1.91 4.5908zm-4.44 19.69h-21.876v-21.862h6.6667c-0.1288 0.7173-0.1965 1.4442-0.2025 2.1728 0.0037 3.5387 1.411 6.9314 3.9133 9.4337 2.5021 2.5022 5.8948 3.9096 9.4336 3.9131 0.6919-0.0036 1.3823-0.0623 2.0647-0.1754v6.5182z"
+                fill="#394149"
+              />
+              <path
+                transform="translate(46,1)"
+                d="m24.51 34h-16.2v-25.46h5.21v21.14h10.99v4.32zm9.74 0.38q-2.87 0-4.98-1.24-2.1-1.24-3.23-3.46-1.14-2.21-1.14-5.15 0-2.97 1.14-5.18 1.13-2.22 3.23-3.46 2.11-1.24 4.98-1.24 2.89 0 4.98 1.24t3.23 3.46q1.14 2.21 1.14 5.18 0 2.94-1.14 5.15-1.14 2.22-3.23 3.46t-4.98 1.24zm0-4.04q1.36 0 2.29-0.76 0.92-0.76 1.38-2.08 0.46-1.33 0.46-2.98 0-1.7-0.46-3.01-0.46-1.32-1.38-2.07-0.93-0.75-2.29-0.75-1.37 0-2.28 0.75-0.92 0.75-1.38 2.07-0.46 1.31-0.46 3.01 0 1.65 0.46 2.98 0.46 1.32 1.38 2.08 0.91 0.76 2.28 0.76zm19.12 11.21q-2.38 0-4.15-0.6-1.78-0.61-2.89-1.67t-1.54-2.41l4.41-1.23q0.24 0.53 0.74 1.03 0.51 0.51 1.34 0.83 0.84 0.33 2.07 0.33 1.97 0 3.09-0.9t1.12-2.79v-3.52h-0.4q-0.34 0.77-0.99 1.48-0.65 0.72-1.7 1.17-1.05 0.46-2.6 0.46-2.16 0-3.92-1.01t-2.81-3.08-1.05-5.23q0-3.23 1.07-5.4t2.83-3.26q1.77-1.1 3.89-1.1 1.61 0 2.7 0.54 1.1 0.54 1.77 1.35 0.68 0.81 1.02 1.57h0.22v-3.22h5.04v18.96q0 2.58-1.19 4.29-1.18 1.72-3.27 2.57-2.08 0.84-4.8 0.84zm0.1-11.72q1.32 0 2.23-0.65 0.92-0.65 1.39-1.87 0.48-1.22 0.48-2.93 0-1.69-0.48-2.96-0.47-1.26-1.39-1.96-0.91-0.7-2.23-0.7-1.35 0-2.26 0.72-0.92 0.73-1.39 1.99-0.47 1.27-0.47 2.91 0 1.67 0.47 2.9 0.47 1.22 1.4 1.88 0.92 0.67 2.25 0.67zm19.81 4.55q-2.87 0-4.98-1.24-2.1-1.24-3.24-3.46-1.13-2.21-1.13-5.15 0-2.97 1.13-5.18 1.14-2.22 3.24-3.46 2.11-1.24 4.98-1.24 2.88 0 4.98 1.24 2.09 1.24 3.23 3.46 1.13 2.21 1.13 5.18 0 2.94-1.13 5.15-1.14 2.22-3.23 3.46-2.1 1.24-4.98 1.24zm0-4.04q1.36 0 2.29-0.76 0.92-0.76 1.38-2.08 0.46-1.33 0.46-2.98 0-1.7-0.46-3.01-0.46-1.32-1.38-2.07-0.93-0.75-2.29-0.75-1.37 0-2.28 0.75-0.92 0.75-1.38 2.07-0.46 1.31-0.46 3.01 0 1.65 0.46 2.98 0.46 1.32 1.38 2.08 0.91 0.76 2.28 0.76zm15.77 3.66h-5.13v-19.11h5.13v19.11zm-2.57-21.6q-1.16 0-1.98-0.77t-0.82-1.86q0-1.1 0.82-1.87t1.98-0.77q1.17 0 2 0.77 0.82 0.76 0.82 1.87 0 1.09-0.82 1.86-0.83 0.77-2 0.77zm9.78 28.74h-5.13v-26.25h5.04v3.22h0.24q0.36-0.76 1.02-1.56t1.73-1.35q1.08-0.55 2.7-0.55 2.12 0 3.88 1.1 1.76 1.09 2.81 3.28 1.06 2.19 1.06 5.45 0 3.18-1.03 5.38-1.03 2.19-2.79 3.33-1.76 1.13-3.96 1.13-1.56 0-2.63-0.53-1.08-0.52-1.75-1.3-0.68-0.78-1.04-1.55h-0.15v10.2zm4-10.93q1.33 0 2.24-0.74 0.92-0.73 1.39-2.03t0.47-2.98q0-1.67-0.47-2.95t-1.38-2.02q-0.9-0.73-2.25-0.73-1.32 0-2.24 0.71-0.92 0.7-1.4 1.98-0.48 1.27-0.48 3.01 0 1.73 0.49 3.02 0.48 1.29 1.41 2.01 0.92 0.72 2.22 0.72zm18.25 4.17q-2.31 0-4.09-0.66-1.77-0.66-2.9-1.92-1.13-1.25-1.46-3.03l4.77-0.82q0.38 1.33 1.32 2t2.51 0.67q1.45 0 2.31-0.56 0.85-0.55 0.85-1.41 0-0.75-0.6-1.23-0.61-0.48-1.86-0.73l-3.3-0.69q-2.77-0.56-4.13-1.92-1.37-1.36-1.37-3.5 0-1.84 1.01-3.17 1.01-1.32 2.8-2.04 1.8-0.72 4.22-0.72 2.26 0 3.92 0.63 1.65 0.62 2.68 1.77 1.02 1.14 1.37 2.7l-4.55 0.8q-0.29-0.97-1.12-1.6-0.83-0.62-2.23-0.62-1.26 0-2.12 0.53-0.85 0.53-0.85 1.4 0 0.73 0.55 1.23 0.56 0.5 1.91 0.77l3.43 0.68q2.77 0.57 4.12 1.84t1.35 3.32q0 1.88-1.09 3.29-1.1 1.41-3.02 2.2t-4.43 0.79zm16.32-0.14q-1.99 0-3.47-0.86-1.49-0.87-2.3-2.48-0.81-1.62-0.81-3.86v-12.15h5.12v11.27q0 1.77 0.93 2.78 0.92 1.01 2.53 1.01 1.09 0 1.93-0.47 0.83-0.47 1.3-1.37 0.47-0.89 0.47-2.16v-11.06h5.13v19.11h-4.84l-0.06-4.77h0.29q-0.76 2.41-2.3 3.71-1.55 1.3-3.92 1.3zm18.06-0.24h-5.13v-19.11h4.75l0.26 4.75h-0.38q0.45-1.76 1.31-2.87t2.02-1.64q1.17-0.53 2.45-0.53 2.07 0 3.33 1.31 1.27 1.31 1.86 4.04h-0.59q0.42-1.83 1.39-3.01 0.96-1.19 2.29-1.76 1.32-0.58 2.78-0.58 1.76 0 3.13 0.77 1.38 0.77 2.17 2.22 0.8 1.44 0.8 3.52v12.89h-5.13v-11.91q0-1.63-0.88-2.41-0.88-0.79-2.16-0.79-0.96 0-1.67 0.42t-1.09 1.17q-0.39 0.75-0.39 1.76v11.76h-4.95v-12.05q0-1.4-0.83-2.23t-2.15-0.83q-0.9 0-1.63 0.41-0.72 0.41-1.14 1.21-0.42 0.79-0.42 1.94v11.55z"
+                fill="#111"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="navbar__center">
+          <input
+            type="checkbox"
+            id="menu__toggle"
+            class="navbar__toggle menu_toggle"
+          />
+          <nav class="navbar__menu menu" aria-label="Main navigation">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link" href="#lorem">Lorem</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#Ipsum">Ipsum</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#Dolor">Dolor</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#Sit">Sit</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#Amet">Amet</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#Consectetur">Consectetur</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="navbar__right">
+          <div class="navbar__language language-selector">
+            <label
+              for="language-selector-toggle"
+              class="navbar__button language-selector__button icon icon-earth"
+            >
               <svg
-                version="1.1"
-                viewBox="0 0 222 44"
+                title="search button"
+                role="img"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  transform="translate(0,2)"
-                  d="m40 13.468c1e-4 -2.686-0.8109-5.3094-2.327-7.5266-1.5161-2.2172-3.6665-3.9248-6.1695-4.8992-2.503-0.97437-5.242-1.1701-7.858-0.56143-2.6162 0.60862-4.9875 1.9932-6.8034 3.9723h-16.842v35.547h35.56v-16.613c1.3956-1.2483 2.5125-2.7769 3.2776-4.4861 0.765-1.7092 1.1611-3.5603 1.1623-5.4329zm-6.8421 0c0.0027 1.287-0.3765 2.546-1.0896 3.6175-0.7132 1.0714-1.7281 1.9073-2.9165 2.4016-1.1884 0.4945-2.4966 0.6253-3.7594 0.3757-1.2626-0.2494-2.4229-0.8678-3.334-1.777-0.911-0.9092-1.5318-2.0682-1.7839-3.3304-0.2521-1.2621-0.124-2.5707 0.3679-3.76 0.4919-1.1894 1.3256-2.2061 2.3955-2.9215 1.0701-0.71535 2.3282-1.0972 3.6153-1.0972 1.7228 0 3.3753 0.68347 4.5947 1.9004 1.2196 1.217 1.9065 2.868 1.91 4.5908zm-4.44 19.69h-21.876v-21.862h6.6667c-0.1288 0.7173-0.1965 1.4442-0.2025 2.1728 0.0037 3.5387 1.411 6.9314 3.9133 9.4337 2.5021 2.5022 5.8948 3.9096 9.4336 3.9131 0.6919-0.0036 1.3823-0.0623 2.0647-0.1754v6.5182z"
-                  fill="#394149"
-                />
-                <path
-                  transform="translate(46,1)"
-                  d="m24.51 34h-16.2v-25.46h5.21v21.14h10.99v4.32zm9.74 0.38q-2.87 0-4.98-1.24-2.1-1.24-3.23-3.46-1.14-2.21-1.14-5.15 0-2.97 1.14-5.18 1.13-2.22 3.23-3.46 2.11-1.24 4.98-1.24 2.89 0 4.98 1.24t3.23 3.46q1.14 2.21 1.14 5.18 0 2.94-1.14 5.15-1.14 2.22-3.23 3.46t-4.98 1.24zm0-4.04q1.36 0 2.29-0.76 0.92-0.76 1.38-2.08 0.46-1.33 0.46-2.98 0-1.7-0.46-3.01-0.46-1.32-1.38-2.07-0.93-0.75-2.29-0.75-1.37 0-2.28 0.75-0.92 0.75-1.38 2.07-0.46 1.31-0.46 3.01 0 1.65 0.46 2.98 0.46 1.32 1.38 2.08 0.91 0.76 2.28 0.76zm19.12 11.21q-2.38 0-4.15-0.6-1.78-0.61-2.89-1.67t-1.54-2.41l4.41-1.23q0.24 0.53 0.74 1.03 0.51 0.51 1.34 0.83 0.84 0.33 2.07 0.33 1.97 0 3.09-0.9t1.12-2.79v-3.52h-0.4q-0.34 0.77-0.99 1.48-0.65 0.72-1.7 1.17-1.05 0.46-2.6 0.46-2.16 0-3.92-1.01t-2.81-3.08-1.05-5.23q0-3.23 1.07-5.4t2.83-3.26q1.77-1.1 3.89-1.1 1.61 0 2.7 0.54 1.1 0.54 1.77 1.35 0.68 0.81 1.02 1.57h0.22v-3.22h5.04v18.96q0 2.58-1.19 4.29-1.18 1.72-3.27 2.57-2.08 0.84-4.8 0.84zm0.1-11.72q1.32 0 2.23-0.65 0.92-0.65 1.39-1.87 0.48-1.22 0.48-2.93 0-1.69-0.48-2.96-0.47-1.26-1.39-1.96-0.91-0.7-2.23-0.7-1.35 0-2.26 0.72-0.92 0.73-1.39 1.99-0.47 1.27-0.47 2.91 0 1.67 0.47 2.9 0.47 1.22 1.4 1.88 0.92 0.67 2.25 0.67zm19.81 4.55q-2.87 0-4.98-1.24-2.1-1.24-3.24-3.46-1.13-2.21-1.13-5.15 0-2.97 1.13-5.18 1.14-2.22 3.24-3.46 2.11-1.24 4.98-1.24 2.88 0 4.98 1.24 2.09 1.24 3.23 3.46 1.13 2.21 1.13 5.18 0 2.94-1.13 5.15-1.14 2.22-3.23 3.46-2.1 1.24-4.98 1.24zm0-4.04q1.36 0 2.29-0.76 0.92-0.76 1.38-2.08 0.46-1.33 0.46-2.98 0-1.7-0.46-3.01-0.46-1.32-1.38-2.07-0.93-0.75-2.29-0.75-1.37 0-2.28 0.75-0.92 0.75-1.38 2.07-0.46 1.31-0.46 3.01 0 1.65 0.46 2.98 0.46 1.32 1.38 2.08 0.91 0.76 2.28 0.76zm15.77 3.66h-5.13v-19.11h5.13v19.11zm-2.57-21.6q-1.16 0-1.98-0.77t-0.82-1.86q0-1.1 0.82-1.87t1.98-0.77q1.17 0 2 0.77 0.82 0.76 0.82 1.87 0 1.09-0.82 1.86-0.83 0.77-2 0.77zm9.78 28.74h-5.13v-26.25h5.04v3.22h0.24q0.36-0.76 1.02-1.56t1.73-1.35q1.08-0.55 2.7-0.55 2.12 0 3.88 1.1 1.76 1.09 2.81 3.28 1.06 2.19 1.06 5.45 0 3.18-1.03 5.38-1.03 2.19-2.79 3.33-1.76 1.13-3.96 1.13-1.56 0-2.63-0.53-1.08-0.52-1.75-1.3-0.68-0.78-1.04-1.55h-0.15v10.2zm4-10.93q1.33 0 2.24-0.74 0.92-0.73 1.39-2.03t0.47-2.98q0-1.67-0.47-2.95t-1.38-2.02q-0.9-0.73-2.25-0.73-1.32 0-2.24 0.71-0.92 0.7-1.4 1.98-0.48 1.27-0.48 3.01 0 1.73 0.49 3.02 0.48 1.29 1.41 2.01 0.92 0.72 2.22 0.72zm18.25 4.17q-2.31 0-4.09-0.66-1.77-0.66-2.9-1.92-1.13-1.25-1.46-3.03l4.77-0.82q0.38 1.33 1.32 2t2.51 0.67q1.45 0 2.31-0.56 0.85-0.55 0.85-1.41 0-0.75-0.6-1.23-0.61-0.48-1.86-0.73l-3.3-0.69q-2.77-0.56-4.13-1.92-1.37-1.36-1.37-3.5 0-1.84 1.01-3.17 1.01-1.32 2.8-2.04 1.8-0.72 4.22-0.72 2.26 0 3.92 0.63 1.65 0.62 2.68 1.77 1.02 1.14 1.37 2.7l-4.55 0.8q-0.29-0.97-1.12-1.6-0.83-0.62-2.23-0.62-1.26 0-2.12 0.53-0.85 0.53-0.85 1.4 0 0.73 0.55 1.23 0.56 0.5 1.91 0.77l3.43 0.68q2.77 0.57 4.12 1.84t1.35 3.32q0 1.88-1.09 3.29-1.1 1.41-3.02 2.2t-4.43 0.79zm16.32-0.14q-1.99 0-3.47-0.86-1.49-0.87-2.3-2.48-0.81-1.62-0.81-3.86v-12.15h5.12v11.27q0 1.77 0.93 2.78 0.92 1.01 2.53 1.01 1.09 0 1.93-0.47 0.83-0.47 1.3-1.37 0.47-0.89 0.47-2.16v-11.06h5.13v19.11h-4.84l-0.06-4.77h0.29q-0.76 2.41-2.3 3.71-1.55 1.3-3.92 1.3zm18.06-0.24h-5.13v-19.11h4.75l0.26 4.75h-0.38q0.45-1.76 1.31-2.87t2.02-1.64q1.17-0.53 2.45-0.53 2.07 0 3.33 1.31 1.27 1.31 1.86 4.04h-0.59q0.42-1.83 1.39-3.01 0.96-1.19 2.29-1.76 1.32-0.58 2.78-0.58 1.76 0 3.13 0.77 1.38 0.77 2.17 2.22 0.8 1.44 0.8 3.52v12.89h-5.13v-11.91q0-1.63-0.88-2.41-0.88-0.79-2.16-0.79-0.96 0-1.67 0.42t-1.09 1.17q-0.39 0.75-0.39 1.76v11.76h-4.95v-12.05q0-1.4-0.83-2.23t-2.15-0.83q-0.9 0-1.63 0.41-0.72 0.41-1.14 1.21-0.42 0.79-0.42 1.94v11.55z"
-                  fill="#111"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.3072 22.4956C12.2052 22.4985 12.1028 22.5 12 22.5C9.69994 22.5 7.5726 21.7605 5.84282 20.5062L7.91603 19.124L8.25 18.9014V18.5V16.5V16.1893L8.03033 15.9697L5.26612 13.2055L6.33541 12.6708L6.64394 12.5166L6.72761 12.1819L7.22761 10.1819L7.40124 9.48735L6.71551 9.28163L2.30589 7.95874C3.88893 4.16577 7.63315 1.5 12 1.5C12.7848 1.5 13.5495 1.58611 14.2852 1.74939L11.4356 5.00612L11.0574 5.43826L11.376 5.91603L13.2036 8.65754L12.7646 10.8529L12.6175 11.5883L13.3529 11.7354L15.8529 12.2354L16.0715 12.2792L16.2785 12.1964L18.7785 11.1964L19.0433 11.0905L19.1708 10.8354L19.7055 9.76612L20.9697 11.0303L21.1893 11.25H21.5H22.4736C22.4911 11.4977 22.5 11.7478 22.5 12C22.5 13.5914 22.146 15.1001 21.5124 16.4517L20.5303 15.4697L20.1806 15.12L19.7215 15.3036L17.2215 16.3036L17.0052 16.3902L16.876 16.584L16.0562 17.8136L13.3767 18.2602L12.8251 18.3521L12.7558 18.907L12.3072 22.4956ZM13.8384 22.3396C16.7164 21.8314 19.19 20.1508 20.7482 17.8089L19.8194 16.88L17.9948 17.6098L17.124 18.916L16.9438 19.1864L16.6233 19.2398L14.1749 19.6479L13.8384 22.3396ZM6.75 18.0986L4.65006 19.4986C2.7061 17.5929 1.5 14.9373 1.5 12C1.5 11.096 1.61424 10.2187 1.82906 9.38174L5.59876 10.5126L5.35606 11.4834L3.66459 12.3292L2.73388 12.7945L3.46967 13.5303L6.75 16.8107V18.0986ZM22.2584 9.75H21.8107L20.0303 7.96967L19.2945 7.23388L18.8292 8.16459L17.9567 9.90954L15.9285 10.7208L14.3825 10.4117L14.7354 8.64709L14.7964 8.34246L14.624 8.08397L12.9426 5.56174L15.8569 2.23102C19.0704 3.50079 21.5074 6.31029 22.2584 9.75ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z"
+                  fill="#000000"
                 />
               </svg>
-            </div>
-          </div>
-          <div class="navbar__center">
+            </label>
             <input
               type="checkbox"
-              id="menu__toggle"
-              class="navbar__toggle menu_toggle"
+              id="language-selector-toggle"
+              class="navbar__toggle language-selector__toggle"
             />
-            <nav class="navbar__menu menu" aria-label="Main navigation">
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#lorem">Lorem</a>
+            <nav
+              class="language-selector__dropdown"
+              aria-label="Language selection"
+            >
+              <ul class="language-selector__list">
+                <li class="language-selector__list-item">
+                  <a class="language-selector__link" href="#">Lorem</a>
                 </li>
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#Ipsum">Ipsum</a>
+                <li class="language-selector__list-item">
+                  <a class="language-selector__link" href="#">Ipsum</a>
                 </li>
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#Dolor">Dolor</a>
+                <li class="language-selector__list-item">
+                  <a class="language-selector__link" href="#">Dolor</a>
                 </li>
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#">Sit</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#">Amet</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#">Consectetur</a>
+                <li class="language-selector__list-item">
+                  <a class="language-selector__link" href="#">Sit</a>
                 </li>
               </ul>
             </nav>
           </div>
-          <div class="navbar__right">
-            <div class="navbar__language language-selector">
-              <label
-                for="language-selector-toggle"
-                class="navbar__button language-selector__button icon icon-earth"
+          <div class="navbar__search search">
+            <label
+              for="search-toggle"
+              class="navbar__button search__button icon icon-search"
+            >
+              <svg
+                role="img"
+                title="search button"
+                width="24"
+                height="24"
+                fill="none"
+                version="1.1"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <path
+                  d="m18.835 9.5774c0 4.8349-3.8313 8.7544-8.5573 8.7544-4.7261 0-8.5573-3.9195-8.5573-8.7544 0-4.8349 3.8313-8.7544 8.5573-8.7544 4.7261 0 8.5573 3.9195 8.5573 8.7544z"
+                  stroke="#000000"
+                  stroke-width="1.5258"
+                />
+                <path
+                  d="m22.395 23.213-5.9974-6.1355"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-width="1.5258"
+                />
+              </svg>
+            </label>
+            <input
+              type="checkbox"
+              id="search-toggle"
+              class="navbar__toggle search__toggle"
+            />
+            <div class="search__dropdown search__block">
+              <form action="#" class="search__form">
+                <input type="text" placeholder="Search" class="search__input" />
+                <button
+                  class="search__submit"
+                  type="submit"
+                  aria-label="Search"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M12.3072 22.4956C12.2052 22.4985 12.1028 22.5 12 22.5C9.69994 22.5 7.5726 21.7605 5.84282 20.5062L7.91603 19.124L8.25 18.9014V18.5V16.5V16.1893L8.03033 15.9697L5.26612 13.2055L6.33541 12.6708L6.64394 12.5166L6.72761 12.1819L7.22761 10.1819L7.40124 9.48735L6.71551 9.28163L2.30589 7.95874C3.88893 4.16577 7.63315 1.5 12 1.5C12.7848 1.5 13.5495 1.58611 14.2852 1.74939L11.4356 5.00612L11.0574 5.43826L11.376 5.91603L13.2036 8.65754L12.7646 10.8529L12.6175 11.5883L13.3529 11.7354L15.8529 12.2354L16.0715 12.2792L16.2785 12.1964L18.7785 11.1964L19.0433 11.0905L19.1708 10.8354L19.7055 9.76612L20.9697 11.0303L21.1893 11.25H21.5H22.4736C22.4911 11.4977 22.5 11.7478 22.5 12C22.5 13.5914 22.146 15.1001 21.5124 16.4517L20.5303 15.4697L20.1806 15.12L19.7215 15.3036L17.2215 16.3036L17.0052 16.3902L16.876 16.584L16.0562 17.8136L13.3767 18.2602L12.8251 18.3521L12.7558 18.907L12.3072 22.4956ZM13.8384 22.3396C16.7164 21.8314 19.19 20.1508 20.7482 17.8089L19.8194 16.88L17.9948 17.6098L17.124 18.916L16.9438 19.1864L16.6233 19.2398L14.1749 19.6479L13.8384 22.3396ZM6.75 18.0986L4.65006 19.4986C2.7061 17.5929 1.5 14.9373 1.5 12C1.5 11.096 1.61424 10.2187 1.82906 9.38174L5.59876 10.5126L5.35606 11.4834L3.66459 12.3292L2.73388 12.7945L3.46967 13.5303L6.75 16.8107V18.0986ZM22.2584 9.75H21.8107L20.0303 7.96967L19.2945 7.23388L18.8292 8.16459L17.9567 9.90954L15.9285 10.7208L14.3825 10.4117L14.7354 8.64709L14.7964 8.34246L14.624 8.08397L12.9426 5.56174L15.8569 2.23102C19.0704 3.50079 21.5074 6.31029 22.2584 9.75ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z"
-                    fill="#000000"
-                  />
-                </svg>
-              </label>
-              <input
-                type="checkbox"
-                id="language-selector-toggle"
-                class="navbar__toggle language-selector__toggle"
-              />
-              <nav
-                class="language-selector__dropdown"
-                aria-label="Language selection"
-              >
-                <ul class="language-selector__list">
-                  <li class="language-selector__list-item">
-                    <a class="language-selector__link" href="#">Lorem</a>
-                  </li>
-                  <li class="language-selector__list-item">
-                    <a class="language-selector__link" href="#">Ipsum</a>
-                  </li>
-                  <li class="language-selector__list-item">
-                    <a class="language-selector__link" href="#">Dolor</a>
-                  </li>
-                  <li class="language-selector__list-item">
-                    <a class="language-selector__link" href="#">Sit</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="navbar__search search">
-              <label
-                for="search-toggle"
-                class="navbar__button search__button icon icon-search"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  fill="none"
-                  version="1.1"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m18.835 9.5774c0 4.8349-3.8313 8.7544-8.5573 8.7544-4.7261 0-8.5573-3.9195-8.5573-8.7544 0-4.8349 3.8313-8.7544 8.5573-8.7544 4.7261 0 8.5573 3.9195 8.5573 8.7544z"
-                    stroke="#000000"
-                    stroke-width="1.5258"
-                  />
-                  <path
-                    d="m22.395 23.213-5.9974-6.1355"
-                    stroke="#000000"
-                    stroke-linecap="round"
-                    stroke-width="1.5258"
-                  />
-                </svg>
-              </label>
-              <input
-                type="checkbox"
-                id="search-toggle"
-                class="navbar__toggle search__toggle"
-              />
-              <div class="search__dropdown search__block">
-                <form action="#" class="search__form">
-                  <input
-                    type="text"
-                    placeholder="Search"
-                    class="search__input"
-                  />
-                  <button
-                    class="search__submit"
-                    type="submit"
-                    aria-label="Search"
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    version="1.1"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      width="24"
-                      height="24"
-                      fill="none"
-                      version="1.1"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="m18.835 9.5774c0 4.8349-3.8313 8.7544-8.5573 8.7544-4.7261 0-8.5573-3.9195-8.5573-8.7544 0-4.8349 3.8313-8.7544 8.5573-8.7544 4.7261 0 8.5573 3.9195 8.5573 8.7544z"
-                        stroke="#000000"
-                        stroke-width="1.5258"
-                      />
-                      <path
-                        d="m22.395 23.213-5.9974-6.1355"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-width="1.5258"
-                      />
-                    </svg>
-                  </button>
-                </form>
-              </div>
+                    <path
+                      d="m18.835 9.5774c0 4.8349-3.8313 8.7544-8.5573 8.7544-4.7261 0-8.5573-3.9195-8.5573-8.7544 0-4.8349 3.8313-8.7544 8.5573-8.7544 4.7261 0 8.5573 3.9195 8.5573 8.7544z"
+                      stroke="#000000"
+                      stroke-width="1.5258"
+                    />
+                    <path
+                      d="m22.395 23.213-5.9974-6.1355"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-width="1.5258"
+                    />
+                  </svg>
+                </button>
+              </form>
             </div>
-            <div class="navbar__hamburger">
-              <label
-                for="menu__toggle"
-                class="navbar__button hamburger__button icon icon-hamburger"
+          </div>
+          <div class="navbar__hamburger">
+            <label
+              for="menu__toggle"
+              class="navbar__button hamburger__button icon icon-hamburger"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                version="1.1"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  width="24"
-                  height="24"
-                  fill="none"
-                  version="1.1"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m24.043 5.0015c0 0.56815-0.46061 1.0288-1.0288 1.0288h-21.947c-0.56815 0-1.0288-0.46061-1.0288-1.0288 0-0.56815 0.46061-1.0288 1.0288-1.0288h21.947c0.56815 0 1.0288 0.46061 1.0288 1.0288zm0 6.8584c0 0.56815-0.46061 1.0288-1.0288 1.0288h-21.947c-0.56815 0-1.0288-0.46061-1.0288-1.0288s0.46061-1.0288 1.0288-1.0288h21.947c0.56815 0 1.0288 0.46061 1.0288 1.0288zm-1.0288 7.8872c0.56815 0 1.0288-0.46061 1.0288-1.0288 0-0.56815-0.46061-1.0288-1.0288-1.0288h-21.947c-0.56815 0-1.0288 0.46061-1.0288 1.0288 0 0.56815 0.46061 1.0288 1.0288 1.0288z"
-                    clip-rule="evenodd"
-                    fill="#000000"
-                    fill-rule="evenodd"
-                    stroke-width="1.3717"
-                  />
-                </svg>
-              </label>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="container hero__container">
-        <div class="row hero__top">
-          <div class="col-sm-6 hero__content">
-            <h1 class="hero__title">Lorem ipsum dolor sit amet</h1>
-            <p class="hero__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a href="#" class="button button--icon hero__button">Lorem ipsum</a>
-          </div>
-
-          <div class="col-sm-6 collage hero__images">
-            <img
-              class="collage__img collage__img__rectangular hero__img__rectangular"
-              src="images/photos/FPO-Rectangular.png"
-              alt="FPO 300 X 400 "
-            />
-
-            <img
-              class="collage__img collage__img__square hero__img__square"
-              src="images/photos/FPO-Square.jpg"
-              alt="FPO"
-            />
-          </div>
-        </div>
-
-        <div class="row hero__down">
-          <div class="col col-sm-4 hero__card__col">
-            <div class="card">
-              <h4 class="card__title">Lorem ipsum dolor sit...</h4>
-              <p class="card__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit
-              </p>
-              <a href="#" class="button button--icon card__button"></a>
-            </div>
-          </div>
-
-          <div class="col col-sm-4 hero__card__col">
-            <div class="card">
-              <h4 class="card__title">Lorem ipsum dolor sit...</h4>
-              <p class="card__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit
-              </p>
-              <a href="#" class="button button--icon card__button"></a>
-            </div>
-          </div>
-
-          <div class="col col-sm-4 hero__card__col">
-            <div class="card">
-              <h4 class="card__title">Lorem ipsum dolor sit...</h4>
-              <p class="card__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit
-              </p>
-              <a href="#" class="button button--icon card__button"></a>
-            </div>
+                <path
+                  d="m24.043 5.0015c0 0.56815-0.46061 1.0288-1.0288 1.0288h-21.947c-0.56815 0-1.0288-0.46061-1.0288-1.0288 0-0.56815 0.46061-1.0288 1.0288-1.0288h21.947c0.56815 0 1.0288 0.46061 1.0288 1.0288zm0 6.8584c0 0.56815-0.46061 1.0288-1.0288 1.0288h-21.947c-0.56815 0-1.0288-0.46061-1.0288-1.0288s0.46061-1.0288 1.0288-1.0288h21.947c0.56815 0 1.0288 0.46061 1.0288 1.0288zm-1.0288 7.8872c0.56815 0 1.0288-0.46061 1.0288-1.0288 0-0.56815-0.46061-1.0288-1.0288-1.0288h-21.947c-0.56815 0-1.0288 0.46061-1.0288 1.0288 0 0.56815 0.46061 1.0288 1.0288 1.0288z"
+                  clip-rule="evenodd"
+                  fill="#000000"
+                  fill-rule="evenodd"
+                  stroke-width="1.3717"
+                />
+              </svg>
+            </label>
           </div>
         </div>
       </div>
-    </section>
-    <section id="lorem" class="section">
-      <div class="container container__section">
-        <div class="headline">
-          <h2 class="headline__title">Lorem ipsum dolor sit amet</h2>
-          <a href="#" class="button button--icon headline__button"
-            >Lorem ipsum</a
-          >
-        </div>
+    </header>
+    <main>
+      <section class="hero">
+        <img
+          src="images/photos/background-mobile-tablet.png"
+          alt="Fondo celular y tablet"
+          class="hero__background__image"
+        />
+        <video autoplay muted loop playsinline class="hero__background__video">
+          <source src="videos/video.mp4" type="video/mp4" />
+          <track
+            kind="subtitles"
+            src="videos/video-subtitles.vtt"
+            srclang="en"
+            label="English Subtitles"
+            default
+          />
+          <track
+            kind="descriptions"
+            src="videos/video-descriptions.vtt"
+            srclang="en"
+            label="English Descriptions"
+          />
+        </video>
 
-        <div class="card-slider">
-          <div class="card card--secondary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
-
-            <div class="card__content">
-              <a href="#" class="button card__button">NEWS</a>
-              <p class="card__date">01.28.2025</p>
-              <p class="card__description">
+        <div class="container hero__container">
+          <div class="row hero__top">
+            <div class="col-sm-6 hero__content">
+              <h1 class="hero__title">Lorem ipsum dolor sit amet</h1>
+              <p class="hero__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <a class="car__link" href="#">Read more</a>
+              <a href="#" class="button button--icon hero__button">Lorem ipsum</a>
             </div>
-          </div>
 
-          <div class="card card--secondary">
-            <div class="card__img__wrapper">
+            <div class="col-sm-6 collage hero__images">
               <img
-                class="card__img"
+                class="collage__img collage__img__rectangular hero__img__rectangular"
+                src="images/photos/FPO-Rectangular.png"
+                alt="FPO 300 X 400 "
+              />
+
+              <img
+                class="collage__img collage__img__square hero__img__square"
                 src="images/photos/FPO-Square.jpg"
                 alt="FPO"
               />
             </div>
-
-            <div class="card__content">
-              <a href="#" class="button card__button">NEWS</a>
-              <p class="card__date">01.14.2025</p>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-              <a class="car__link" href="#">Read more</a>
-            </div>
           </div>
 
-          <div class="card card--secondary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
+          <div class="row hero__down">
+            <div class="col col-sm-4 hero__card__col">
+              <a href="#" class="card card--primary">
+                <h4 class="card__title">Lorem ipsum dolor sit...</h4>
+                <p class="card__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                </p>
+                <span href="#" class="button button--icon card__button"></span>
+              </a>
             </div>
 
-            <div class="card__content">
-              <a href="#" class="button card__button">NEWS</a>
-              <p class="card__date">11.05.2024</p>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-              <a class="car__link" href="#">Read more</a>
+            <div class="col col-sm-4 hero__card__col">
+              <a href="#" class="card card--primary">
+                <h4 class="card__title">Lorem ipsum dolor sit...</h4>
+                <p class="card__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                </p>
+                <span href="#" class="button button--icon card__button"></span>
+              </a>
+            </div>
+
+            <div class="col col-sm-4 hero__card__col">
+              <a href="#" class="card card--primary">
+                <h4 class="card__title">Lorem ipsum dolor sit...</h4>
+                <p class="card__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                </p>
+                <span href="#" class="button button--icon card__button"></span>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="Ipsum" class="section section--charcoal-blue">
-      <div class="container container__section--charcoal-blue">
-        <div class="headline headline--secondary">
-          <div class="headline__text">
-            <h2 class="headline__title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </h2>
-
-            <p class="headline__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
-          </div>
-
-          <a href="#" class="button button--icon headline__button">
-            Lorem ipsum dolor
-          </a>
-        </div>
-
-        <div class="card-collection">
-          <div class="card card--tertiary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
-
-            <div class="card__content">
-              <h3 class="card__title">Lorem ipsum</h3>
-
-              <a href="#" class="button button--icon card__button"></a>
-            </div>
-          </div>
-
-          <div class="card card--tertiary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
-
-            <div class="card__content">
-              <h3 class="card__title">Lorem ipsum</h3>
-
-              <a href="#" class="button button--icon card__button"></a>
-            </div>
-          </div>
-
-          <div class="card card--tertiary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
-
-            <div class="card__content">
-              <h3 class="card__title">Lorem ipsum</h3>
-
-              <a href="#" class="button button--icon card__button"></a>
-            </div>
-          </div>
-
-          <div class="card card--tertiary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
-
-            <div class="card__content">
-              <h3 class="card__title">Lorem ipsum</h3>
-
-              <a href="#" class="button button--icon card__button"></a>
-            </div>
-          </div>
-
-          <div class="card card--tertiary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
-
-            <div class="card__content">
-              <h3 class="card__title">Lorem ipsum</h3>
-
-              <a href="#" class="button button--icon card__button"></a>
-            </div>
-          </div>
-
-          <div class="card card--tertiary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
-
-            <div class="card__content">
-              <h3 class="card__title">Lorem ipsum</h3>
-
-              <a href="#" class="button button--icon card__button"></a>
-            </div>
-          </div>
-
-          <div class="card card--tertiary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
-
-            <div class="card__content">
-              <h3 class="card__title">Lorem ipsum</h3>
-
-              <a href="#" class="button button--icon card__button"></a>
-            </div>
-          </div>
-
-          <div class="card card--tertiary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
-
-            <div class="card__content">
-              <h3 class="card__title">Lorem ipsum</h3>
-
-              <a href="#" class="button button--icon card__button"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="Dolor" class="section section--white">
-      <div class="container container__section--white">
-        <div class="headline headline--tertiary">
-          <div class="headline__text">
+      </section>
+      <section id="lorem" class="section">
+        <div class="container">
+          <div class="headline">
             <h2 class="headline__title">Lorem ipsum dolor sit amet</h2>
+            <a href="#" class="button button--icon headline__button"
+              >Lorem ipsum</a
+            >
+          </div>
 
-            <p class="headline__description">
+          <div class="card-slider">
+            <div class="card-slider__item">
+              <a href="#" class="card card--secondary">
+                <div class="card__img__wrapper">
+                  <img
+                    class="card__img"
+                    src="images/photos/FPO-Square.jpg"
+                    alt="FPO"
+                  />
+                </div>
+                <div class="card__content">
+                  <span href="#" class="card__category">NEWS</span>
+                  <p class="card__date">01.28.2025</p>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </p>
+                  <span href="#" class="card__link">Read more</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="card-slider__item">
+              <a href="#" class="card card--secondary">
+                <div class="card__img__wrapper">
+                  <img
+                    class="card__img"
+                    src="images/photos/FPO-Square.jpg"
+                    alt="FPO"
+                  />
+                </div>
+
+                <div class="card__content">
+                  <span href="#" class="card__category">NEWS</span>
+                  <p class="card__date">01.14.2025</p>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </p>
+                  <span class="card__link" href="#">Read more</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="card-slider__item">
+              <a href="#" class="card card--secondary">
+                <div class="card__img__wrapper">
+                  <img
+                    class="card__img"
+                    src="images/photos/FPO-Square.jpg"
+                    alt="FPO"
+                  />
+                </div>
+
+                <div class="card__content">
+                  <span href="#" class="card__category">NEWS</span>
+                  <p class="card__date">11.05.2024</p>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </p>
+                  <span class="card__link" href="#">Read more</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Ipsum" class="section section--charcoal-blue">
+        <div class="container">
+          <div class="headline headline--secondary">
+            <div class="headline__text">
+              <h2 class="headline__title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </h2>
+
+              <p class="headline__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
+
+            <a href="#" class="button button--icon headline__button">
+              Lorem ipsum dolor
+            </a>
+          </div>
+
+          <div class="card-collection">
+            <a href="#" class="card card--tertiary">
+              <div class="card__img__wrapper">
+                <img
+                  class="card__img"
+                  src="images/photos/FPO-Square.jpg"
+                  alt="FPO"
+                />
+              </div>
+
+              <div class="card__content">
+                <h3 class="card__title">Lorem ipsum</h3>
+
+                <span href="#" class="button button--icon card__button"></span>
+              </div>
+            </a>
+
+            <a href="#" class="card card--tertiary">
+              <div class="card__img__wrapper">
+                <img
+                  class="card__img"
+                  src="images/photos/FPO-Square.jpg"
+                  alt="FPO"
+                />
+              </div>
+
+              <div class="card__content">
+                <h3 class="card__title">Lorem ipsum</h3>
+
+                <span href="#" class="button button--icon card__button"></span>
+              </div>
+            </a>
+
+            <a href="#" class="card card--tertiary">
+              <div class="card__img__wrapper">
+                <img
+                  class="card__img"
+                  src="images/photos/FPO-Square.jpg"
+                  alt="FPO"
+                />
+              </div>
+
+              <div class="card__content">
+                <h3 class="card__title">Lorem ipsum</h3>
+
+                <span href="#" class="button button--icon card__button"></span>
+              </div>
+            </a>
+
+            <a href="#" class="card card--tertiary">
+              <div class="card__img__wrapper">
+                <img
+                  class="card__img"
+                  src="images/photos/FPO-Square.jpg"
+                  alt="FPO"
+                />
+              </div>
+
+              <div class="card__content">
+                <h3 class="card__title">Lorem ipsum</h3>
+
+                <span href="#" class="button button--icon card__button"></span>
+              </div>
+            </a>
+
+            <a href="#" class="card card--tertiary">
+              <div class="card__img__wrapper">
+                <img
+                  class="card__img"
+                  src="images/photos/FPO-Square.jpg"
+                  alt="FPO"
+                />
+              </div>
+
+              <div class="card__content">
+                <h3 class="card__title">Lorem ipsum</h3>
+
+                <span href="#" class="button button--icon card__button"></span>
+              </div>
+            </a>
+
+            <a href="#" class="card card--tertiary">
+              <div class="card__img__wrapper">
+                <img
+                  class="card__img"
+                  src="images/photos/FPO-Square.jpg"
+                  alt="FPO"
+                />
+              </div>
+
+              <div class="card__content">
+                <h3 class="card__title">Lorem ipsum</h3>
+
+                <span href="#" class="button button--icon card__button"></span>
+              </div>
+            </a>
+
+            <a href="#" class="card card--tertiary">
+              <div class="card__img__wrapper">
+                <img
+                  class="card__img"
+                  src="images/photos/FPO-Square.jpg"
+                  alt="FPO"
+                />
+              </div>
+
+              <div class="card__content">
+                <h3 class="card__title">Lorem ipsum</h3>
+
+                <span href="#" class="button button--icon card__button"></span>
+              </div>
+            </a>
+
+            <a href="#" class="card card--tertiary">
+              <div class="card__img__wrapper">
+                <img
+                  class="card__img"
+                  src="images/photos/FPO-Square.jpg"
+                  alt="FPO"
+                />
+              </div>
+
+              <div class="card__content">
+                <h3 class="card__title">Lorem ipsum</h3>
+
+                <span href="#" class="button button--icon card__button"></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="Dolor" class="section section--white">
+        <div class="container">
+          <div class="headline headline--tertiary">
+            <div class="headline__text">
+              <h2 class="headline__title">Lorem ipsum dolor sit amet</h2>
+
+              <p class="headline__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
+
+            <a href="#" class="button button--icon headline__button">
+              Lorem ipsum dolor
+            </a>
+          </div>
+
+          <div class="card-deck">
+            <a href="#" class="card card--quaternary">
+              <div class="card__img__wrapper">
+                <img
+                  class="card__img"
+                  src="images/photos/FPO-Square.jpg"
+                  alt="FPO"
+                />
+              </div>
+
+              <div class="card__content">
+                <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+                <span href="#" class="button card__button button--icon"></span>
+              </div>
+            </a>
+
+            <a href="#" class="card card--quaternary">
+              <div class="card__img__wrapper">
+                <img
+                  class="card__img"
+                  src="images/photos/FPO-Square.jpg"
+                  alt="FPO"
+                />
+              </div>
+              <div class="card__content">
+                <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+                <span href="#" class="button card__button button--icon"></span>
+              </div>
+            </a>
+
+            <a href="#" class="card card--quaternary">
+              <div class="card__img__wrapper">
+                <img
+                  class="card__img"
+                  src="images/photos/FPO-Square.jpg"
+                  alt="FPO"
+                />
+              </div>
+              <div class="card__content">
+                <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+                <span href="#" class="button card__button button--icon"></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="Sit" class="section section--vector">
+        <div class="container">
+          <div class="component component__intro">
+            <div class="headline headline--fifth">
+              <h3 class="headline__title">Lorem ipsum dolor sit amet</h3>
+
+              <p class="headline__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+
+              <a href="#" class="headline__link">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </a>
+
+              <a href="#" class="button button--icon headline__button">
+                Learn More
+              </a>
+            </div>
+
+            <div class="collage collage--intro">
+              <img
+                src="images/photos/FPO-Rectangular.png"
+                class="collage__img__rectangular"
+                alt="FPO-Rectangular"
+              />
+
+              <img
+                src="images/photos/FPO-Square.jpg"
+                class="collage__img__square"
+                alt="FPO-Square"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Amet" class="section section--vector__reversed">
+        <div class="container">
+          <div class="component component__intro--reversed">
+            <div class="headline headline--sixth">
+              <p class="headline__overline">LOREM IPSUM</p>
+
+              <h3 class="headline__title">Lorem ipsum dolor sit amet</h3>
+
+              <p class="headline__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+
+              <a href="#" class="button button--icon headline__button">
+                Lorem ipsum dolor sit amet
+              </a>
+            </div>
+
+            <div class="collage collage--intro__reversed">
+              <img
+                src="images/photos/FPO-Rectangular.png"
+                class="collage__img__rectangular"
+                alt="FPO-Rectangular"
+              />
+
+              <img
+                src="images/photos/FPO-Square.jpg"
+                class="collage__img__square"
+                alt="FPO-Square"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Consectetur" class="section section--red">
+        <div class="container">
+          <div class="promotion__red">
+            <div class="headline--promotion">
+              <h3 class="headline__title">Lorem ipsum dolor sit amet</h3>
+
+              <p class="headline__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+
+              <a class="button button--icon" href="#"> Learn More </a>
+            </div>
+
+            <div class="headline--promotion">
+              <h3 class="headline__title">Lorem ipsum dolor</h3>
+
+              <p class="headline__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+
+              <a class="button button--icon" href="#"> Learn More </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="Footer" class="section section--footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="logo">
+            <img class="img__logo" src="images/icons/logo.svg" alt="logo" />
+          </div>
+
+          <div class="descriptions">
+            <p class="text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem
               ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -531,77 +723,59 @@
               dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit
               amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua
             </p>
           </div>
 
-          <a href="#" class="button button--icon headline__button">
-            Lorem ipsum dolor
-          </a>
+          <div class="links">
+            <a class="link" href="#"> Lorem ipsum </a>
+
+            <a class="link" href="#"> Lorem ipsum </a>
+
+            <a class="link" href="#"> Lorem ipsum </a>
+
+            <a class="link" href="#"> Lorem ipsum </a>
+          </div>
+
+          <div class="footer__button">
+            <a href="#" class="button button--icon"> Lorem ipsum </a>
+          </div>
         </div>
 
-        <div class="card-deck">
-          <!-- Card 1 -->
-          <div class="card card--quaternary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
+        <div class="footer-meta">
+          <div class="icons">
+            <p class="text__icon">Connect with us:</p>
 
-            <div class="card__content">
-              <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-              <a href="#" class="button card__button button--icon"></a>
-            </div>
+            <img
+              class="icon icon__facebbok"
+              src="images/icons/facebook.svg"
+              alt="facebook"
+            />
+
+            <img
+              class="icon icon__linkedin"
+              src="images/icons/linkedin.svg"
+              alt="linkedin"
+            />
           </div>
 
-          <!-- Card 2 -->
+          <div class="Policies">
+            <a class="link" href="#"> Privacy Policy </a>
 
-          <div class="card card--quaternary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
-            <div class="card__content">
-              <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-              <a href="#" class="button card__button button--icon"></a>
-            </div>
+            <a class="link" href="#"> Terms & Conditions </a>
+
+            <a class="link" href="#"> Terms of Use </a>
           </div>
 
-          <!-- Card 3 -->
-
-          <div class="card card--quaternary">
-            <div class="card__img__wrapper">
-              <img
-                class="card__img"
-                src="images/photos/FPO-Square.jpg"
-                alt="FPO"
-              />
-            </div>
-            <div class="card__content">
-              <h5 class="card__title">Lorem ipsum dolor sit amet</h5>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-              <a href="#" class="button card__button button--icon"></a>
-            </div>
+          <div class="date">
+            <p class="text">@ 2025 Lorem Ipsum</p>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
