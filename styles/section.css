@@ -1,41 +1,184 @@
 :root {
-  --section-spacing-top: 90px; 
-  --section-spacing-bottom: 137px; 
+  --section-spacing-top: 90px;
+  --section-spacing-bottom: 138px;
 
   @media (min-width: 768px) {
-    --section-spacing-top: 80px; 
-    --section-spacing-bottom: 144px; 
-  }
-
-  @media (min-width: 1024px) {
-    --section-spacing-top: 60px;
-    --section-spacing-bottom: 121px;
+    --section-spacing-top: 80px;
+    --section-spacing-bottom: 146px;
   }
 
   @media (min-width: 1228px) {
-    --section-spacing-top: 60px;
-    --section-spacing-bottom: 144px;
+    --section-spacing-bottom: 150px;
   }
 }
 
 .section {
   padding-top: var(--section-spacing-top);
   padding-bottom: var(--section-spacing-bottom);
+  @media (min-width: 1024px) {
+    padding-top: calc(var(--section-spacing-top) * 0.75);
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.84);
+  }
+  @media (min-width: 1228px) {
+    padding-top: calc(var(--section-spacing-top) * 0.74);
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.972);
+  }
 
   &.section--charcoal-blue {
     background-color: var(--color-Charcoal-Blue);
     padding-top: calc(var(--section-spacing-top) * 0.8);
-    padding-bottom: calc(var(--section-spacing-bottom) * 0.64);
-      @media (min-width: 768px) {
-        padding-bottom: calc(var(--section-spacing-bottom) * 0.62);
-      }
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.63);
+    @media (min-width: 768px) {
+      padding-top: calc(var(--section-spacing-top) * 0.76);
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.61);
+    }
 
-      @media (min-width: 1024px) {
-        padding-bottom: calc(var(--section-spacing-bottom) * 0.76);
-      }
+    @media (min-width: 1024px) {
+      padding-top: calc(var(--section-spacing-top) * 0.6);
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.63);
+    }
 
-      @media (min-width: 1288px) {
-        padding-bottom: calc(var(--section-spacing-bottom) * 0.605);
-      }
+    @media (min-width: 1288px) {
+      padding-top: calc(var(--section-spacing-top) * 0.61);
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.58);
+    }
   }
-}
+
+  &.section--white {
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.6);
+  }
+
+  &.section--vector {
+    position: relative;
+    padding-top: calc(var(--section-spacing-top) * 0.8);
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.866);
+    @media (min-width: 768px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.145);
+    }
+
+    @media (min-width: 1024px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.403);
+    }
+
+    @media (min-width: 1228px) {
+      padding-top: calc(var(--section-spacing-top) * 0.78);
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.69);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("../images/photos/vector.svg");
+      background-size: 750px 400px;
+      background-position: 10% -3%;
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      z-index: -1;
+      @media (min-width: 768px) {
+        background-size: 106% 93%;
+        background-position: -64% 27%;
+      }
+      @media (min-width: 1024px) {
+        background-size: 94% 96%;
+        background-position: 62% 5%;
+      }
+      @media (min-width: 1288px) {
+        background-size: 98% 101%;
+        background-position: -150% -13%;
+      }
+    }
+  }
+
+  &.section--vector__reversed {
+    overflow: hidden;
+    position: relative;
+    z-index: 0; 
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.514);
+    background-color: var(--color-Charcoal-Blue);
+    @media (min-width: 768px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.184);
+    }
+
+    @media (min-width: 1024px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.48);
+    }
+
+    @media (min-width: 1228px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.73);
+    }
+
+    &::before , 
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+    }
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 190%;
+      aspect-ratio: 1;
+      background-image: url(../images/photos/globe.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center top;
+      z-index: 0;
+      @media (min-width: 768px) {
+        left: 74%;
+        top: 22%;
+        width: 85%;
+      }
+
+      @media (min-width: 1228px) {
+        left: 72%;
+        top: 19%;
+        width: 77%;
+      }
+    }
+
+    &::after {
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(0deg, rgba(29, 33, 44, 1) 0%, rgba(29, 33, 44, 0) 100%);
+      z-index: 1; 
+      pointer-events: none;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &.section--red {
+    background-color: var(--color-red);
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.87);
+    @media (min-width: 768px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.83);
+    }
+
+    @media (min-width: 1024px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.82);
+    }
+
+    @media (min-width: 1228px) {
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.8);
+    }
+  }
+
+  &.section--footer {
+    padding-top: calc(var(--section-spacing-top) * 0.53);
+    padding-bottom: calc(var(--section-spacing-bottom) * 0.3);
+    background-color: var(--color-Charcoal-Blue);
+    color: var(--color-white);
+    @media (min-width: 768px) {
+      padding-top: calc(var(--section-spacing-top) * 0.6);
+      padding-bottom: calc(var(--section-spacing-bottom) * 0.1);
+    }
+
+    @media (min-width: 1024px) {
+      padding-top: calc(var(--section-spacing-top) * 0.7);
+      padding-bottom: calc(var(--section-spacing-bottom) - 136px);
+    }
+  }
+} 
