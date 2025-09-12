@@ -1,6 +1,9 @@
-.footer-wrapper {
+.footer{
   display: flex;
   flex-direction: column;
+}
+
+.footer__wrapper {
   margin-bottom: 33px;
   @media (min-width: 1024px) {
     flex-wrap: wrap;
@@ -106,7 +109,7 @@
   }
 }
 
-.footer-meta {
+.footer__meta {
   display: flex;
   flex-direction: column;
   @media (min-width: 1024px) {
@@ -150,14 +153,14 @@
       gap: 45px;
     }
 
-      .link {
+      .footer__link {
         text-decoration: none;
         color: inherit; 
       }
   }
 
   .footer__date {
-    .text {
+    .footer__text {
       font-size: 12px;
       margin: 0;
       margin-bottom: 45px;
