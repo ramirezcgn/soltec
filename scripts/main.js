@@ -1,18 +1,40 @@
-let pageTitle = document.getElementById("main-title");
+let pageTitle = document.querySelector(".hero__title");
 
 pageTitle.textContent = "Desarrollo Web y Soluciones";
 
-//pageTitle.innerHTML = "<em>Desarrollo Web y Soluciones</em>"; no se recomienda usar innerHTML para solo cambiar texto
+let secondaryPageTitle = [...document.querySelectorAll(".headline__title")];
 
-let sectionBgColor = document.getElementById("dolor");
+secondaryPageTitle.forEach(title => {
+  title.textContent = "Innovación digital para tu negocio";
+});
 
-sectionBgColor.style.backgroundColor = "#EBF2F6";
+let sectionBgColor = [...document.querySelectorAll(".section")];
 
-/* stlyle Cambia la apariencia
-.style.color = "blue";
-.style.fontSize = "28px";
-.style.textAlign = "center";
-*/
+sectionBgColor.forEach(color => {
+  let backgroundColor = getComputedStyle(color).backgroundColor;
+
+  if (backgroundColor === "rgb(255, 255, 255)") {
+    color.style.backgroundColor = "#EBF2F6";
+  }
+});
+
+
+let boton = document.getElementById("boton");
+let menu = document.getElementById("menu");
+
+boton.addEventListener("click", () => {
+  menu.classList.toggle("visible");
+  menu.classList.toggle("oculto");
+});
+
+const languageButton = document.querySelector('.language-selector__button');
+const languageMenu = document.querySelector('.language-selector__dropdown');
+
+languageButton.addEventListener('click', () => {
+  languageMenu.classList.toggle('visible');
+});
+
+
 
 
 /* # �� 50 Ejercicios de JavaScript: Manipulación del DOM

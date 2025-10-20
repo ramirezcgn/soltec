@@ -161,6 +161,7 @@
   cursor: pointer;
 }
 
+
 /* ===== language-selector ===== */
 
 .language-selector__dropdown {
@@ -168,21 +169,21 @@
   display: none;
 }
 
-.language-selector__toggle:checked ~ .language-selector__dropdown {
-  display: block;
+.language-selector__dropdown {
+  display: none;
+  position: absolute;
   right: 50%;
   transform: translateX(50%);
   top: 46px;
   padding: 20px;
   background-color: white;
   border-radius: 7px;
-
-  @media (min-width: 1024px) {
-    top: 56px;
-    right: -25px;
-    transform: none;
-  }
 }
+
+.language-selector__dropdown.visible {
+  display: block;
+}
+
 
 .language-selector__list {
   display:flex ;

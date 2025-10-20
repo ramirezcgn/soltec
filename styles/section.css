@@ -13,6 +13,7 @@
 }
 
 .section {
+  background-color: white;
   padding-top: var(--section-spacing-top);
   padding-bottom: var(--section-spacing-bottom);
   @media (min-width: 1024px) {
@@ -73,7 +74,6 @@
       background-position: 10% -3%;
       background-repeat: no-repeat;
       opacity: 0.5;
-      z-index: -1;
       @media (min-width: 768px) {
         background-size: 106% 93%;
         background-position: -64% 27%;
