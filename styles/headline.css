@@ -125,21 +125,16 @@
 
   .headline--fifth & {
     font-size: 34px;
-    margin-top: 114px;
+    margin-top: 0;
     font-weight: 700;
     @media (min-width: 768px) {
       font-size: 43px;
       padding-right: 80px;
-      margin-top: 99px;
       margin-bottom: 14px;
     }
     @media (min-width: 1024px) {
-      margin-top: 118px;
       margin-bottom: 14px;
       padding: 0;
-    }
-    @media (min-width: 1228px) {
-      margin-top: 161px;
     }
   }
 

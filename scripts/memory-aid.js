@@ -1,7 +1,11 @@
+//----------------Seleccionar Elementos del DOM----------------
+
 let pageTitle = document.querySelector(".hero__title");
 
 // querySelector selecciona un elemento css y devuelve un elemento.
 // no se recomienda usar getElementBy--.
+
+//---------------------Modificar Contenido de Texto------------------
 
 pageTitle.textContent = "Desarrollo Web y Soluciones";
 // tambien se puede usar, menos recomendado.
@@ -18,6 +22,8 @@ let secondaryPageTitlE = [...document.querySelectorAll(".headline__title")];
 secondaryPageTitle.forEach(title => {
   title.textContent = "Innovación digital para tu negocio";
 });
+
+//------------------Modificar Estilos CSS (Directamente con .style)---------------------
 
 let sectionBgColor = [...document.querySelectorAll(".section")];
 
@@ -37,13 +43,16 @@ sectionBgColor.forEach(color => {
 .style.textTransform = "uppercase";
 */
 
+//--------------------------------Manipulación de Clases CSS--------------------
+
+
 pageTitle.classList.add("new__class"); // agrega una clase
 pageTitle.classList.remove("new__class");  // quita la clase
 pageTitle.classList.toggle("new__class");  // la agrega si no está, o la quita si está
 pageTitle.classList.contains("new__class"); // verifica si la tiene
 
 // sirve para cuando el usuario interactue con la pagina y esta haga algo por ejemplo para ocultar o mostrar cosas.
-
+ 
 /*  css
 .oculto {
   display: none;  Oculta el menú 
@@ -63,3 +72,52 @@ boton.addEventListener("click", () => {
   menu.classList.toggle("oculto");
 });
 */
+
+let addLine = [...document.querySelectorAll(".card--quaternary .card__description")];
+
+addLine.forEach(element => {
+  element.classList.add("new__class");
+  element.style.borderBottom = "2px solid #696e7c";
+  element.style.paddingBottom = "40px";
+});
+
+//addLine.forEach(element => element.classList.add("new__class"));
+
+//addLine.forEach(element => element.style.borderBottom = "2px solid #696e7c");
+
+//addLine.forEach(element => element.style.paddingBottom = "40px");
+
+// --------------------Creacion de Elemento+Clase---------------------
+
+let selectFather = document.querySelector(".headline--fifth");
+
+let newElement = document.createElement("p");
+                                        // agrega el elemento entre ()
+
+newElement.classList.add("headline__overline");
+//add = agregar
+
+newElement.textContent = "LOREM IPSUM";
+
+selectFather.append(newElement);
+//append = crear nodo
+
+selectFather.remove(newElement);
+//remove = eliminar nodo
+
+//---------------------------------------Acceder al Padre, hijo y hermano-----------------------------------
+
+let findFather = document.querySelector(".container");
+
+findFather.parentElement;
+// sirve para cuando seleccionas al hijo el padre haga algo comocambiar de color
+
+findFather.children;
+// no se accede directamente al hijo sino a una lista y se accede a traves de su indice [0]
+
+findFather.firstElementChild;
+// accede al primer elemento del hijo derectamente y last al ultimo
+
+findFather.previousElementSibling;
+// accede al elemento anterior y next al seguiente
+

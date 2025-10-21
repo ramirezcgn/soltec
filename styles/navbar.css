@@ -180,10 +180,21 @@
   border-radius: 7px;
 }
 
-.language-selector__dropdown.visible {
+.language-selector__toggle:checked ~ .language-selector__dropdown {
   display: block;
-}
+  right: 50%;
+  transform: translateX(50%);
+  top: 46px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 7px;
 
+  @media (min-width: 1024px) {
+    top: 56px;
+    right: -25px;
+    transform: none;
+  }
+}
 
 .language-selector__list {
   display:flex ;

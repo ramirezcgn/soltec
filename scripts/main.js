@@ -18,24 +18,25 @@ sectionBgColor.forEach(color => {
   }
 });
 
+let addLine = [...document.querySelectorAll(".card--quaternary .card__description")];
 
-let boton = document.getElementById("boton");
-let menu = document.getElementById("menu");
-
-boton.addEventListener("click", () => {
-  menu.classList.toggle("visible");
-  menu.classList.toggle("oculto");
+addLine.forEach(element => {
+  element.classList.add("new__class");
+  element.style.borderBottom = "2px solid #696e7c";
+  element.style.paddingBottom = "40px";
 });
 
-const languageButton = document.querySelector('.language-selector__button');
-const languageMenu = document.querySelector('.language-selector__dropdown');
+let selectFather = document.querySelector(".headline--fifth");
 
-languageButton.addEventListener('click', () => {
-  languageMenu.classList.toggle('visible');
-});
+let selectBrother = document.querySelector(".headline--fifth .headline__title");
 
+let newElement = document.createElement("p");
 
+newElement.classList.add("headline__overline");
 
+newElement.textContent = "LOREM IPSUM";
+
+selectFather.insertBefore(newElement, selectBrother);
 
 /* # �� 50 Ejercicios de JavaScript: Manipulación del DOM
 

@@ -36,7 +36,6 @@
       margin-left: -7%;
       margin-top: 11%;
       margin-bottom: 13%;
-      z-index: -1;
       @media (min-width: 768px) {
         width: 51%;
         margin-top: 18%;
@@ -102,6 +101,7 @@
     .collage--intro & {
       margin-left: 1%;
       aspect-ratio: 1;
+      z-index: 1;
       @media (min-width: 768px) {
         width: 38%;
         margin-left: 4%;
