@@ -105,6 +105,14 @@ selectFather.append(newElement);
 selectFather.remove(newElement);
 //remove = eliminar nodo
 
+//----------------------------- Agregar una Clase que ya existe a un elemento ----------------
+
+newElement.classList.add("headline__overline", "button", "button--icon");
+// se pueden agregar varias 
+
+newElement.setAttribute("class", "button");
+// menos recomendable borra las clases que ya tiene el elemento 
+
 //---------------------------------------Acceder al Padre, hijo y hermano-----------------------------------
 
 let findFather = document.querySelector(".container");
@@ -121,3 +129,5 @@ findFather.firstElementChild;
 findFather.previousElementSibling;
 // accede al elemento anterior y next al seguiente
 
+
+//**                                            EVENTOS                                                         * *//

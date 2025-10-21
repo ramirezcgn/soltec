@@ -32,7 +32,7 @@ let selectBrother = document.querySelector(".headline--fifth .headline__title");
 
 let newElement = document.createElement("p");
 
-newElement.classList.add("headline__overline");
+newElement.classList.add("headline__overline", "button", "button--icon");
 
 newElement.textContent = "LOREM IPSUM";
 
