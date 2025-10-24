@@ -1,3 +1,10 @@
+/*
+objeto[índice] → se usa para acceder a posiciones.
+
+objeto(parámetro) → se usa para ejecutar funciones.
+*/
+
+
 //----------------Seleccionar Elementos del DOM----------------
 
 let pageTitle = document.querySelector(".hero__title");
@@ -131,3 +138,5 @@ findFather.previousElementSibling;
 
 
 //**                                            EVENTOS                                                         * *//
+
+// onclick : le dice al navegador que hacer cuando el usuario haga click

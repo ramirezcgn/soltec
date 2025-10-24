@@ -38,6 +38,19 @@ newElement.textContent = "LOREM IPSUM";
 
 selectFather.insertBefore(newElement, selectBrother);
 
+// ------------------------------------------- EVENTOS -----------------------------------------
+
+let titles = [...document.querySelectorAll(".headline")];
+
+titles.forEach(title => {
+ title.addEventListener("click", showClick);
+});
+
+function showClick (e) {
+ console.log(e.target.innerText);
+}
+
+
 /* # �� 50 Ejercicios de JavaScript: Manipulación del DOM
 
 ## �� Nivel 1: Fundamentos
