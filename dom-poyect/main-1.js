@@ -19,19 +19,19 @@ function generateRandomHexColor() {
     return characters;
 }
 
-function changedColor() {
+function changeColor() {
     const changedColor = selectMain.style.backgroundColor  = generateRandomHexColor();
 
     return changedColor;
 }
 
-function changedText() {
+function changeText() {
     const changedText = text.textContent = generateRandomHexColor(); 
 
     return changedText;
 }
 
 selectButton.addEventListener("click", () => {
-  changedColor();
-  changedText();
+  changeColor();
+  changeText();
 });
