@@ -140,3 +140,24 @@ findFather.previousElementSibling;
 //**                                            EVENTOS                                                         * *//
 
 // onclick : le dice al navegador que hacer cuando el usuario haga click
+
+
+// -----------------------------  oculta y aparece el navbar al srollear -----------------------------------
+const selectNavbar = document.querySelector(".navbar");
+
+let startScroll = 0; 
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.scrollY;
+  const highNavbar = selectNavbar.offsetHeight;
+
+  if (currentScroll > startScroll && currentScroll > highNavbar) {
+    selectNavbar.classList.add("navbar__hidden");
+    selectNavbar.classList.remove("navbar__visible");
+  } else {
+    selectNavbar.classList.add("navbar__visible");
+    selectNavbar.classList.remove("navbar__hidden");
+  }
+
+  startScroll = currentScroll; 
+});

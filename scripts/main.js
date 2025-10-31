@@ -40,6 +40,49 @@ selectFather.insertBefore(newElement, selectBrother);
 
 // ------------------------------------------- EVENTOS -----------------------------------------
 
+// ------------------------------------------- NAVBAR ------------------------------------------
+
+const selectNavbar = document.querySelector(".navbar");
+
+/*
+window.onscroll = function ()  
+{
+  const highNavbar = selectNavbar.offsetHeight;
+  selectNavbar.classList.toggle("off", window.scrollY > highNavbar);
+} 
+*/
+
+let startScroll = 0; 
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.scrollY;
+  const highNavbar = selectNavbar.offsetHeight;
+
+  if (currentScroll > startScroll && currentScroll > highNavbar) {
+    selectNavbar.classList.add("navbar__hidden");
+    selectNavbar.classList.remove("navbar__visible");
+  } else {
+    selectNavbar.classList.add("navbar__visible");
+    selectNavbar.classList.remove("navbar__hidden");
+  }
+
+  startScroll = currentScroll; 
+});
+
+// ----------------------------------------navbar selector----------------------------------------------
+
+const selectLanguage = document.querySelector(".navbar__language");
+
+selectLanguage.addEventListener("click", () => {
+
+  selectLanguage.classList.toggle("navbar__menu--active");
+  
+});
+
+//------------------------------------------------------------------------------------------------------
+
+
+
 let titles = [...document.querySelectorAll(".headline")];
 
 titles.forEach(title => {
