@@ -1,0 +1,57 @@
+.container--major {
+  padding: 0 16px;
+}
+
+.cmp-product-list {
+  color: black;
+  overflow: hidden;
+}
+
+.cmp-card-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-right: -16px;
+  scrollbar-width: none;
+  gap: 16px;
+}
+
+.cmp-product-list__title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.cmp-product-list__heading {
+  font-family: "Integral CF";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  padding-top: 55px;
+  padding-bottom: 34px;
+}
+
+.cmp-card__img {
+  width: 198px;
+  height: 200px;
+  left: 16px;
+  opacity: 1;
+}
+
+.cmp-card-name {
+  font-family: "Satoshi";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  all: unset;
+  color: inherit;
+  cursor: pointer;
+}
