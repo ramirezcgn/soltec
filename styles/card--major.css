@@ -82,39 +82,31 @@
   padding-top: 10px;
 }
 
-:root {
-  --star-size: 20px;
-  --star-color: #d0d6e0;
-  --star-active: #ffb400;
-}
-
 .cmp-stars {
-  padding-top: 4px;
-  width: 19px;
-  height: 19px;
-  --rating: 0;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: calc(16px * 5);
+  height: 16px;
+  background: url("../images/icons/Star\ 2.svg") repeat-x;
+  background-size: 16px 16px;
+  fill &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: url("../images/icons/Star.svg") repeat-x;
+    background-size: 16px 16px;
+    width: calc(var(--rating) * 20%);
+  }
 
-  font-size: var(--star-size);
-  line-height: 1;
-  display: inline-block;
-  background: linear-gradient(
-    90deg,
-    var(--star-active) calc(var(--rating) / 5 * 100%),
-    var(--star-color) calc(var(--rating) / 5 * 100%)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.cmp-card-price {
-  font-family: "Satoshi";
-  font-weight: 700;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0;
-  vertical-align: middle;
-  margin: 0;
-  padding-top: 4px;
+  &::after {
+    position: absolute;
+    content: attr(data-rating) "/5";
+    font-size: 1rem;
+    font-weight: 500;
+    left: 60%;
+    color: #000;
+  }
 }
